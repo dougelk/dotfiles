@@ -1,0 +1,920 @@
+crt:
+  c:
+    attrs:
+      args:
+        build:
+          action: store_true
+          flags: [-b, --build]
+          help: This will create SRPM and RPM packages.
+        eclipse:
+          action: [default_iff_used, ~/workspace]
+          flags: [-e, --eclipse]
+          gui_hints: {default: ~/workspace, type: path}
+          help: Configure as Eclipse project (uses ~/workspace or specified directory)
+          nargs: '?'
+          preserved: global.eclipse_workspace_dir
+        github:
+          flags: [-g, --github]
+          gui_hints: {default: $(whoami)}
+          help: Create a GitHub repository and push your sources there (uses your
+            system username or specified name)
+          nargs: '?'
+          preserved: global.github_login
+        name:
+          flags: [-n, --name]
+          help: Name of project to create
+          required: true
+        vim:
+          action: store_true
+          flags: [-v, --vim]
+          help: Configure VIM editor for various programming languages
+      description: The C assistant will help you create a basic C project and install
+        its dependencies.
+      fullname: C
+    ctime: 1446594955.225
+    snippets: {common_args: 1446594955.268, eclipse: 1446594955.268, github: 1446594955.268,
+      vim: 1446594955.268}
+    source: /usr/share/devassistant/assistants/crt/c.yaml
+    subhierarchy: {}
+  cpp:
+    attrs:
+      args:
+        build:
+          action: store_true
+          flags: [-b, --build]
+          help: This will create SRPM and RPM packages.
+        eclipse:
+          action: [default_iff_used, ~/workspace]
+          flags: [-e, --eclipse]
+          gui_hints: {default: ~/workspace, type: path}
+          help: Configure as Eclipse project (uses ~/workspace or specified directory)
+          nargs: '?'
+          preserved: global.eclipse_workspace_dir
+        github:
+          flags: [-g, --github]
+          gui_hints: {default: $(whoami)}
+          help: Create a GitHub repository and push your sources there (uses your
+            system username or specified name)
+          nargs: '?'
+          preserved: global.github_login
+        name:
+          flags: [-n, --name]
+          help: Name of project to create
+          required: true
+        vim:
+          action: store_true
+          flags: [-v, --vim]
+          help: Configure VIM editor for various programming languages
+      description: The C++ assistant will help you create a basic C++ project and
+        install its dependencies.
+      fullname: C++
+    ctime: 1446594955.225
+    snippets: {common_args: 1446594955.268, eclipse: 1446594955.268, github: 1446594955.268,
+      vim: 1446594955.268}
+    source: /usr/share/devassistant/assistants/crt/cpp.yaml
+    subhierarchy: {}
+  dap:
+    attrs:
+      args:
+        author:
+          default: $(git config --global user.name)
+          flags: [--author]
+          help: Specify the name of the author (without the e-mail address)
+        bugreports:
+          default: ''
+          flags: [--bugreports]
+          help: Specify where to report bugs
+        crt:
+          action: store_const
+          const: crt
+          default: ''
+          flags: [--crt]
+          help: Create empty "crt" assistant
+        description:
+          default: ''
+          flags: [--description]
+          help: Specify the DAP description
+        dirname:
+          default: ''
+          flags: [-d, --dirname]
+          help: Specify the name of a directory and the git repository. Defaults to
+            dap-{name}
+        email:
+          default: $(git config --global user.email)
+          flags: [--email]
+          help: Specify the e-mail address of the author
+        extra:
+          action: store_const
+          const: extra
+          default: ''
+          flags: [--extra]
+          help: Create empty "extra" assistant
+        github:
+          flags: [-g, --github]
+          gui_hints: {default: $(whoami)}
+          help: Create a GitHub repository and push your sources there (uses your
+            system username or specified name)
+          nargs: '?'
+          preserved: global.github_login
+        homepage:
+          default: FIXME
+          flags: [--homepage]
+          help: Specify the DAP homepage
+        license:
+          default: FIXME
+          flags: [--license]
+          help: Specify the DAP license
+        name:
+          flags: [-n, --name]
+          help: Name of project to create
+          required: true
+        prep:
+          action: store_const
+          const: prep
+          default: ''
+          flags: [--prep]
+          help: Create empty "prep" assistant
+        snippet:
+          action: store_const
+          const: snippet
+          default: ''
+          flags: [--snippet]
+          help: Create empty snippet
+        summary:
+          default: A fresh new DAP
+          flags: [--summary]
+          help: Specify the DAP summary
+        twk:
+          action: store_const
+          const: twk
+          default: ''
+          flags: [--twk]
+          help: Create empty "twk" assistant
+        version:
+          default: 0.0.1dev
+          flags: [--version]
+          help: Specify the DAP version
+      description: Set up environment for DevAssistant package development
+      fullname: DevAssistant package
+    ctime: 1446594955.227
+    snippets: {common_args: 1446594955.268, dap: 1446594955.268, github: 1446594955.268}
+    source: /usr/share/devassistant/assistants/crt/dap.yaml
+    subhierarchy: {}
+  java:
+    attrs: {description: This is base Java assistant. You have to choose a specific
+        project type., fullname: Java}
+    ctime: 1446594955.227
+    snippets: {}
+    source: /usr/share/devassistant/assistants/crt/java.yaml
+    subhierarchy:
+      jsf:
+        attrs:
+          args:
+            eclipse:
+              action: [default_iff_used, ~/workspace]
+              flags: [-e, --eclipse]
+              gui_hints: {default: ~/workspace, type: path}
+              help: Configure as Eclipse project (uses ~/workspace or specified directory)
+              nargs: '?'
+              preserved: global.eclipse_workspace_dir
+            github:
+              flags: [-g, --github]
+              gui_hints: {default: $(whoami)}
+              help: Create a GitHub repository and push your sources there (uses your
+                system username or specified name)
+              nargs: '?'
+              preserved: global.github_login
+            name:
+              flags: [-n, --name]
+              help: Name of project to create
+              required: true
+          fullname: Simple JavaServer Faces Project
+        ctime: 1446594955.227
+        snippets: {common_args: 1446594955.268, eclipse: 1446594955.268, github: 1446594955.268}
+        source: /usr/share/devassistant/assistants/crt/java/jsf.yaml
+        subhierarchy: {}
+      maven:
+        attrs:
+          args:
+            eclipse:
+              action: [default_iff_used, ~/workspace]
+              flags: [-e, --eclipse]
+              gui_hints: {default: ~/workspace, type: path}
+              help: Configure as Eclipse project (uses ~/workspace or specified directory)
+              nargs: '?'
+              preserved: global.eclipse_workspace_dir
+            github:
+              flags: [-g, --github]
+              gui_hints: {default: $(whoami)}
+              help: Create a GitHub repository and push your sources there (uses your
+                system username or specified name)
+              nargs: '?'
+              preserved: global.github_login
+            name:
+              flags: [-n, --name]
+              help: Name of project to create
+              required: true
+          fullname: Simple Apache Maven Project
+        ctime: 1446594955.227
+        snippets: {common_args: 1446594955.268, eclipse: 1446594955.268, github: 1446594955.268}
+        source: /usr/share/devassistant/assistants/crt/java/maven.yaml
+        subhierarchy: {}
+  nodejs:
+    attrs: {description: This is base Node.js assistant. You have to choose a specific
+        project type., fullname: Node.js}
+    ctime: 1446594955.227
+    snippets: {}
+    source: /usr/share/devassistant/assistants/crt/nodejs.yaml
+    subhierarchy:
+      app:
+        attrs:
+          args:
+            github:
+              flags: [-g, --github]
+              gui_hints: {default: $(whoami)}
+              help: Create a GitHub repository and push your sources there (uses your
+                system username or specified name)
+              nargs: '?'
+              preserved: global.github_login
+            name:
+              flags: [-n, --name]
+              help: Name of project to create
+              required: true
+          description: Node.js assistant will help you create a basic Node.js application
+            and install its dependencies.
+          fullname: Node.js application
+        ctime: 1446594955.227
+        snippets: {common_args: 1446594955.268, github: 1446594955.268}
+        source: /usr/share/devassistant/assistants/crt/nodejs/app.yaml
+        subhierarchy: {}
+      express:
+        attrs:
+          args:
+            github:
+              flags: [-g, --github]
+              gui_hints: {default: $(whoami)}
+              help: Create a GitHub repository and push your sources there (uses your
+                system username or specified name)
+              nargs: '?'
+              preserved: global.github_login
+            name:
+              flags: [-n, --name]
+              help: Name of project to create
+              required: true
+          description: Express assistant will help you create a basic web application
+            with Express framework and install its dependencies.
+          fullname: Express - web framework
+        ctime: 1446594955.2289999
+        snippets: {common_args: 1446594955.268, github: 1446594955.268}
+        source: /usr/share/devassistant/assistants/crt/nodejs/express.yaml
+        subhierarchy: {}
+  perl:
+    attrs: {description: This is base Perl assistant. You have to choose a specific
+        project type., fullname: Perl}
+    ctime: 1446594955.227
+    snippets: {}
+    source: /usr/share/devassistant/assistants/crt/perl.yaml
+    subhierarchy:
+      class:
+        attrs:
+          args:
+            github:
+              flags: [-g, --github]
+              gui_hints: {default: $(whoami)}
+              help: Create a GitHub repository and push your sources there (uses your
+                system username or specified name)
+              nargs: '?'
+              preserved: global.github_login
+            name:
+              flags: [-n, --name]
+              help: Name of project to create
+              required: true
+            vim:
+              action: store_true
+              flags: [-v, --vim]
+              help: Configure VIM editor for various programming languages
+          description: Class assistant will help you create a basic perl class.
+          fullname: Basic class
+        ctime: 1446594955.2289999
+        snippets: {common_args: 1446594955.268, github: 1446594955.268, vim: 1446594955.268}
+        source: /usr/share/devassistant/assistants/crt/perl/class.yaml
+        subhierarchy: {}
+      dancer:
+        attrs:
+          args:
+            cgi:
+              action: store_true
+              flags: [--cgi]
+              help: Enable support for running the application through CGI
+            fastcgi:
+              action: store_true
+              flags: [--fastcgi]
+              help: Enable support for running the application through FastCGI
+            github:
+              flags: [-g, --github]
+              gui_hints: {default: $(whoami)}
+              help: Create a GitHub repository and push your sources there (uses your
+                system username or specified name)
+              nargs: '?'
+              preserved: global.github_login
+            name:
+              flags: [-n, --name]
+              help: Name of project to create
+              required: true
+          description: Dancer assistant will help you create a basic web application
+            using the Dancer framework.
+          fullname: Dancer
+        ctime: 1446594955.2289999
+        snippets: {common_args: 1446594955.268, github: 1446594955.268}
+        source: /usr/share/devassistant/assistants/crt/perl/dancer.yaml
+        subhierarchy: {}
+  php:
+    attrs: {description: This is base PHP assistant. You have to choose a specific
+        project type., fullname: PHP}
+    ctime: 1446594955.227
+    snippets: {}
+    source: /usr/share/devassistant/assistants/crt/php.yaml
+    subhierarchy:
+      lamp:
+        attrs:
+          args:
+            eclipse:
+              action: [default_iff_used, ~/workspace]
+              flags: [-e, --eclipse]
+              gui_hints: {default: ~/workspace, type: path}
+              help: Configure as Eclipse project (uses ~/workspace or specified directory)
+              nargs: '?'
+              preserved: global.eclipse_workspace_dir
+            github:
+              flags: [-g, --github]
+              gui_hints: {default: $(whoami)}
+              help: Create a GitHub repository and push your sources there (uses your
+                system username or specified name)
+              nargs: '?'
+              preserved: global.github_login
+            name:
+              flags: [-n, --name]
+              help: Name of project to create
+              required: true
+            rootdbpwd:
+              flags: [-r, --rootdb]
+              help: Root password for mysql db. Do not specify root password if not
+                needed
+            vim:
+              action: store_true
+              flags: [-v, --vim]
+              help: Configure VIM editor for various programming languages
+          fullname: Apache httpd, MySQL and PHP with phpMyAdmin
+        ctime: 1446594955.23
+        snippets: {common_args: 1446594955.268, eclipse: 1446594955.268, github: 1446594955.268,
+          vim: 1446594955.268}
+        source: /usr/share/devassistant/assistants/crt/php/lamp.yaml
+        subhierarchy: {}
+  python:
+    attrs: {description: This is base Python assistant. You have to choose a specific
+        project type., fullname: Python}
+    ctime: 1446594955.227
+    snippets: {}
+    source: /usr/share/devassistant/assistants/crt/python.yaml
+    subhierarchy:
+      django:
+        attrs:
+          args:
+            docker:
+              action: store_true
+              flags: [--docker]
+              help: Add Dockerfile to the project.
+            eclipse:
+              action: [default_iff_used, ~/workspace]
+              flags: [-e, --eclipse]
+              gui_hints: {default: ~/workspace, type: path}
+              help: Configure as Eclipse project (uses ~/workspace or specified directory)
+              nargs: '?'
+              preserved: global.eclipse_workspace_dir
+            github:
+              flags: [-g, --github]
+              gui_hints: {default: $(whoami)}
+              help: Create a GitHub repository and push your sources there (uses your
+                system username or specified name)
+              nargs: '?'
+              preserved: global.github_login
+            name:
+              flags: [-n, --name]
+              help: Name of project to create
+              required: true
+            py3:
+              action: store_const
+              const: 3
+              default: ''
+              flags: [--py3]
+              help: Use Python 3 instead of Python 2.
+              preserved: python.py3
+            venv:
+              action: store_const
+              const: venv
+              default: ''
+              flags: [--venv]
+              help: Use virtualenv to set up project and install dependencies.
+            vim:
+              action: store_true
+              flags: [-v, --vim]
+              help: Configure VIM editor for various programming languages
+          description: Django assistant will help you create a basic Django project
+            and install its dependencies.
+          fullname: Django
+        ctime: 1446594955.23
+        snippets: {common_args: 1446594955.268, eclipse: 1446594955.268, github: 1446594955.268,
+          python: 1446594955.268, vim: 1446594955.268}
+        source: /usr/share/devassistant/assistants/crt/python/django.yaml
+        subhierarchy: {}
+      flask:
+        attrs:
+          args:
+            eclipse:
+              action: [default_iff_used, ~/workspace]
+              flags: [-e, --eclipse]
+              gui_hints: {default: ~/workspace, type: path}
+              help: Configure as Eclipse project (uses ~/workspace or specified directory)
+              nargs: '?'
+              preserved: global.eclipse_workspace_dir
+            github:
+              flags: [-g, --github]
+              gui_hints: {default: $(whoami)}
+              help: Create a GitHub repository and push your sources there (uses your
+                system username or specified name)
+              nargs: '?'
+              preserved: global.github_login
+            name:
+              flags: [-n, --name]
+              help: Name of project to create
+              required: true
+            rpm:
+              action: store_true
+              flags: [-r, --rpm]
+              help: This will create SPEC file and install dependencies for building
+                RPM package.
+            venv:
+              action: store_const
+              const: venv
+              default: ''
+              flags: [--venv]
+              help: Use virtualenv to set up project and install dependencies.
+            vim:
+              action: store_true
+              flags: [-v, --vim]
+              help: Configure VIM editor for various programming languages
+          description: Flask assistant will help you create a basic Flask project
+            and install its dependencies.
+          fullname: Flask
+        ctime: 1446594955.23
+        snippets: {common_args: 1446594955.268, eclipse: 1446594955.268, github: 1446594955.268,
+          python: 1446594955.268, vim: 1446594955.268}
+        source: /usr/share/devassistant/assistants/crt/python/flask.yaml
+        subhierarchy: {}
+      gtk3:
+        attrs:
+          args:
+            eclipse:
+              action: [default_iff_used, ~/workspace]
+              flags: [-e, --eclipse]
+              gui_hints: {default: ~/workspace, type: path}
+              help: Configure as Eclipse project (uses ~/workspace or specified directory)
+              nargs: '?'
+              preserved: global.eclipse_workspace_dir
+            github:
+              flags: [-g, --github]
+              gui_hints: {default: $(whoami)}
+              help: Create a GitHub repository and push your sources there (uses your
+                system username or specified name)
+              nargs: '?'
+              preserved: global.github_login
+            name:
+              flags: [-n, --name]
+              help: Name of project to create
+              required: true
+            vim:
+              action: store_true
+              flags: [-v, --vim]
+              help: Configure VIM editor for various programming languages
+          description: Python GTK+ 3 assistant will help you create a basic GTK+ 3
+            application with basic functionality of widgets.
+          fullname: Python GTK+ 3
+        ctime: 1446594955.23
+        snippets: {common_args: 1446594955.268, eclipse: 1446594955.268, github: 1446594955.268,
+          vim: 1446594955.268}
+        source: /usr/share/devassistant/assistants/crt/python/gtk3.yaml
+        subhierarchy: {}
+      lib:
+        attrs:
+          args:
+            eclipse:
+              action: [default_iff_used, ~/workspace]
+              flags: [-e, --eclipse]
+              gui_hints: {default: ~/workspace, type: path}
+              help: Configure as Eclipse project (uses ~/workspace or specified directory)
+              nargs: '?'
+              preserved: global.eclipse_workspace_dir
+            github:
+              flags: [-g, --github]
+              gui_hints: {default: $(whoami)}
+              help: Create a GitHub repository and push your sources there (uses your
+                system username or specified name)
+              nargs: '?'
+              preserved: global.github_login
+            name:
+              flags: [-n, --name]
+              help: Name of project to create
+              required: true
+            rpm:
+              action: store_true
+              flags: [-r, --rpm]
+              help: This will create SPEC file and install dependencies for building
+                RPM package.
+            venv:
+              action: store_const
+              const: venv
+              default: ''
+              flags: [--venv]
+              help: Use virtualenv to set up project and install dependencies.
+            vim:
+              action: store_true
+              flags: [-v, --vim]
+              help: Configure VIM editor for various programming languages
+          description: Lib assistant will help you create a custom Python library.
+          fullname: Lib
+        ctime: 1446594955.23
+        snippets: {common_args: 1446594955.268, eclipse: 1446594955.268, github: 1446594955.268,
+          python: 1446594955.268, vim: 1446594955.268}
+        source: /usr/share/devassistant/assistants/crt/python/lib.yaml
+        subhierarchy: {}
+  ruby:
+    attrs: {description: This is base Ruby assistant. You have to choose a specific
+        project type., fullname: Ruby}
+    ctime: 1446594955.227
+    snippets: {}
+    source: /usr/share/devassistant/assistants/crt/ruby.yaml
+    subhierarchy:
+      rails:
+        attrs:
+          args:
+            github:
+              flags: [-g, --github]
+              gui_hints: {default: $(whoami)}
+              help: Create a GitHub repository and push your sources there (uses your
+                system username or specified name)
+              nargs: '?'
+              preserved: global.github_login
+            name:
+              flags: [-n, --name]
+              help: Name of project to create
+              required: true
+            vim:
+              action: store_true
+              flags: [-v, --vim]
+              help: Configure VIM editor for various programming languages
+          description: Ruby on Rails assistant will help you create a basic web application
+            using Ruby on Rails framework.
+          fullname: Ruby on Rails
+        ctime: 1446594955.231
+        snippets: {common_args: 1446594955.268, github: 1446594955.268, vim: 1446594955.268}
+        source: /usr/share/devassistant/assistants/crt/ruby/rails.yaml
+        subhierarchy: {}
+extra:
+  dap:
+    attrs: {description: DevAssistant package extra assistant. Choose a subassistant.,
+      fullname: DevAssistant package}
+    ctime: 1446594955.231
+    snippets: {}
+    source: /usr/share/devassistant/assistants/extra/dap.yaml
+    subhierarchy:
+      upload:
+        attrs:
+          args:
+            dap:
+              flags: [-d, --dap]
+              help: DAP file to upload
+              required: true
+            server:
+              default: dapi.devassistant.org
+              flags: [-s, --server]
+              help: DAPI server to upload to (defaults to dapi.devassistant.org)
+            terms:
+              action: store_true
+              flags: [--agree-with-terms]
+              help: By using this flag, you express agreement with the DAPI Terms
+                of Use (https://dapi.devassistant.org/terms/)
+          description: Uploads a .dap file to DAPI
+          fullname: Upload a DAP
+        ctime: 1446594955.231
+        snippets: {}
+        source: /usr/share/devassistant/assistants/extra/dap/upload.yaml
+        subhierarchy: {}
+prep:
+  custom:
+    attrs:
+      args:
+        gh_fork:
+          action: [default_iff_used, '']
+          flags: [--gh-fork]
+          gui_hints: {default: $(whoami)}
+          help: Fork the repo, assuming it's on Github. Pass your GH username as argument
+            if it's different from your system username.
+          nargs: '?'
+          preserved: prep.custom.gh_fork
+        gh_repo:
+          flags: [-r, --gh-repo]
+          help: Username/Repository of a project hosted on GitHub. Not active when
+            URL is specified.
+        path:
+          default: .
+          flags: [-p, --path]
+          gui_hints: {default: $(pwd), type: path}
+          help: Path where to checkout the repo (will be created if it does not exist).
+          nargs: '?'
+        ssh:
+          action: store_true
+          flags: [-s, --ssh]
+          help: When cloning with --gh-repo, use SSH protocol instead of git.
+        url:
+          flags: [-u, --url]
+          help: Url of the project git repo (uses http/https/git).
+      description: Only use this with projects whose upstream you trust, since the
+        project can specify arbitrary custom commands that will run on your machine.
+        The custom assistant sets up environment for developing custom project previously
+        created with DevAssistant.
+      fullname: Custom Project
+    ctime: 1446594955.231
+    snippets: {common_args: 1446594955.268, github: 1446594955.268}
+    source: /usr/share/devassistant/assistants/prep/custom.yaml
+    subhierarchy: {}
+  devassistant:
+    attrs:
+      args:
+        gh_fork:
+          action: [default_iff_used, '']
+          flags: [--gh-fork]
+          gui_hints: {default: $(whoami)}
+          help: Fork DevAssistant repo on GitHub. Pass your GH username as argument
+            if it's different from your system username.
+          nargs: '?'
+        path:
+          default: .
+          flags: [-p, --path]
+          gui_hints: {default: $(pwd), type: path}
+          help: Path where to checkout the repo (will be created if it does not exist).
+          nargs: '?'
+        py3:
+          action: store_const
+          const: 3
+          default: ''
+          flags: [--py3]
+          help: Install Python 3 dependencies instead of Python 2 dependencies.
+          preserved: python.py3
+        url:
+          default: https://github.com/devassistant/devassistant
+          flags: [-u, --url]
+          help: If used, will check out DevAssistant from given URL (useful when working
+            with fork).
+          required: false
+      description: Set up environment for DevAssistant and checkout sources.
+      fullname: DevAssistant
+    ctime: 1446594955.231
+    snippets: {common_args: 1446594955.268, github: 1446594955.268, python: 1446594955.268}
+    source: /usr/share/devassistant/assistants/prep/devassistant.yaml
+    subhierarchy: {}
+twk:
+  c:
+    attrs: {description: This assistant will help you modify your C/C++ projects already
+        created by devassistant., fullname: C/C++ projects}
+    ctime: 1446594955.231
+    snippets: {}
+    source: /usr/share/devassistant/assistants/twk/c.yaml
+    subhierarchy:
+      header:
+        attrs:
+          args:
+            header:
+              flags: [--header]
+              help: Specify C/C++ header file which will be added into configure.ac
+              required: true
+            path:
+              default: .
+              flags: [-p, --path]
+              gui_hints: {default: $(pwd), type: path}
+              help: Specify path to your project (defaults to current working directory
+                if not used).
+              nargs: '?'
+          description: This assistant will help you add header file into already created
+            project by devassistant. Just run it in the projects directory and specify
+            which header you want to add and check.
+          fullname: Adding header
+        ctime: 1446594955.231
+        snippets: {common_args: 1446594955.268}
+        source: /usr/share/devassistant/assistants/twk/c/header.yaml
+        subhierarchy: {}
+      lib:
+        attrs:
+          args:
+            function:
+              flags: [-f, --function]
+              help: Specify function provided by library.
+              required: true
+            library:
+              flags: [-l, --library]
+              help: Specify library which will be added into configure.ac.
+              required: true
+            path:
+              default: .
+              flags: [-p, --path]
+              gui_hints: {default: $(pwd), type: path}
+              help: Specify path to your project (defaults to current working directory
+                if not used).
+              nargs: '?'
+          description: This assistant will help you add library into already created
+            project by devassistant. Just run it in the projects directory and specify
+            which library you want to add and check.
+          fullname: Adding library
+        ctime: 1446594955.231
+        snippets: {common_args: 1446594955.268}
+        source: /usr/share/devassistant/assistants/twk/c/lib.yaml
+        subhierarchy: {}
+  dap:
+    attrs: {description: DevAssistant package tweak assistant. Choose a subassistant.,
+      fullname: DevAssistant package}
+    ctime: 1446594955.231
+    snippets: {}
+    source: /usr/share/devassistant/assistants/twk/dap.yaml
+    subhierarchy:
+      add:
+        attrs:
+          args:
+            crt:
+              action: store_const
+              const: crt
+              default: ''
+              flags: [--crt]
+              help: Create empty "crt" assistant
+            extra:
+              action: store_const
+              const: extra
+              default: ''
+              flags: [--extra]
+              help: Create empty "extra" assistant
+            path:
+              default: .
+              flags: [-p, --path]
+              gui_hints: {default: $(pwd), type: path}
+              help: Specify path to your project (defaults to current working directory
+                if not used).
+              nargs: '?'
+            prep:
+              action: store_const
+              const: prep
+              default: ''
+              flags: [--prep]
+              help: Create empty "prep" assistant
+            snippet:
+              action: store_const
+              const: snippet
+              default: ''
+              flags: [--snippet]
+              help: Create empty snippet
+            twk:
+              action: store_const
+              const: twk
+              default: ''
+              flags: [--twk]
+              help: Create empty "twk" assistant
+          description: Adds specific type of assistant or a snippet to an existing
+            DAP
+          fullname: Add assistant or snippet
+        ctime: 1446594955.231
+        snippets: {common_args: 1446594955.268, dap: 1446594955.268}
+        source: /usr/share/devassistant/assistants/twk/dap/add.yaml
+        subhierarchy: {}
+      pack:
+        attrs:
+          args:
+            path:
+              default: .
+              flags: [-p, --path]
+              gui_hints: {default: $(pwd), type: path}
+              help: Specify path to your project (defaults to current working directory
+                if not used).
+              nargs: '?'
+          description: Creates a .dap file form the project
+          fullname: Pack a DAP
+        ctime: 1446594955.231
+        snippets: {common_args: 1446594955.268}
+        source: /usr/share/devassistant/assistants/twk/dap/pack.yaml
+        subhierarchy: {}
+  docker:
+    attrs: {description: This is a base Docker assistant it's subassistants will help
+        you work with Docker images and containers., fullname: Docker}
+    ctime: 1446594955.231
+    snippets: {}
+    source: /usr/share/devassistant/assistants/twk/docker.yaml
+    subhierarchy:
+      develop:
+        attrs:
+          args:
+            mountpoint:
+              flags: [-m, --mountpoint]
+              help: Specify directory to mount source code in; defaults to first 'ADD'
+                instruction of Dockerfile.
+            path:
+              default: .
+              flags: [-p, --path]
+              gui_hints: {default: $(pwd), type: path}
+              help: Specify path to your project (defaults to current working directory
+                if not used).
+              nargs: '?'
+            reuse_image:
+              flags: [-i, --reuse-image]
+              help: Provide a name of image to reuse.
+          description: 'Creates Docker image and runs a container for your project,
+            mounting your source code in.
+
+            Let this run while you''re developing.
+
+'
+          fullname: Run a Development Container
+        ctime: 1446594955.231
+        snippets: {common_args: 1446594955.268}
+        source: /usr/share/devassistant/assistants/twk/docker/develop.yaml
+        subhierarchy: {}
+  eclipse:
+    attrs:
+      args:
+        eclipse:
+          default: ~/workspace
+          flags: [-e, --eclipse]
+          gui_hints: {type: path}
+          help: Specify your workspace other than ~/workspace.
+        path:
+          default: .
+          flags: [-p, --path]
+          gui_hints: {default: $(pwd), type: path}
+          help: Specify path to your project (defaults to current working directory
+            if not used).
+          nargs: '?'
+      description: This assistant can import already created project into Eclipse.
+        Just run it in the projects directory.
+      fullname: Eclipse Import
+    ctime: 1446594955.231
+    snippets: {common_args: 1446594955.268}
+    source: /usr/share/devassistant/assistants/twk/eclipse.yaml
+    subhierarchy: {}
+  github:
+    attrs: {description: Subassistants of Github assistant provide various ways to
+        work with Github repos., fullname: Github}
+    ctime: 1446594955.231
+    snippets: {}
+    source: /usr/share/devassistant/assistants/twk/github.yaml
+    subhierarchy:
+      create:
+        attrs:
+          args:
+            github-login:
+              default: ''
+              flags: [-g, --github-login]
+              gui_hints: {default: $(whoami)}
+              help: Specify your github login, in case it's different from your system
+                username.
+            path:
+              default: .
+              flags: [-p, --path]
+              gui_hints: {default: $(pwd), type: path}
+              help: Specify path to your project (defaults to current working directory
+                if not used).
+              nargs: '?'
+            push:
+              action: store_true
+              flags: [-u, --push]
+              help: Push sources after creating repo.
+          description: Creates Github repository (+ local git repository if not already
+            created) and optionally pushes sources there. Works even for projects
+            that weren't created by DevAssistant.
+          fullname: Create Github repository
+        ctime: 1446594955.231
+        snippets: {common_args: 1446594955.268}
+        source: /usr/share/devassistant/assistants/twk/github/create.yaml
+        subhierarchy: {}
+  vim:
+    attrs:
+      args:
+        path:
+          default: .
+          flags: [-p, --path]
+          gui_hints: {default: $(pwd), type: path}
+          help: Specify path to your project (defaults to current working directory
+            if not used).
+          nargs: '?'
+      description: This assistant can set up Vim for various programming languages.
+        Just run it in the project's directory.
+      fullname: Vim Setup
+    ctime: 1446594955.231
+    snippets: {common_args: 1446594955.268}
+    source: /usr/share/devassistant/assistants/twk/vim.yaml
+    subhierarchy: {}
+version: 0.11.2

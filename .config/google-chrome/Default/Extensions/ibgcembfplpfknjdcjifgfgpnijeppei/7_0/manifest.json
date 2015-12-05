@@ -1,0 +1,17 @@
+{
+   "app": {
+      "launch": {
+         "web_url": "http://wordsearch.randomsaladgames.com/"
+      },
+      "urls": [ "http://wordsearch.randomsaladgames.com/" ]
+   },
+   "description": "Play a fun game of word search in over 150 categories!",
+   "icons": {
+      "128": "Icon128.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC/BjyR0vQ0HgYKqQRybq81OPRVLNhaSXEJaFqQKsZgtX4NKm35r5OO1iqmDoA3fUVocZvH8lX/TZS31VDx2mtfKIqssbPuqIoP3OuBhdBjrVU7epnG0ZrbLf/GM4RXEk373795eT63FMlY8YjrzKr3YHMfZ43dtNgPRmlx5STxyQIDAQAB",
+   "name": "Word Search",
+   "permissions": [  ],
+   "update_url": "http://clients2.google.com/service/update2/crx",
+   "version": "7"
+}

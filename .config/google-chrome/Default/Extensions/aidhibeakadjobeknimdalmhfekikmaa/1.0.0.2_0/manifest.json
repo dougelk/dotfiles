@@ -1,0 +1,17 @@
+{
+   "app": {
+      "launch": {
+         "web_url": "http://www.memory.engsol.com.mx/index.php"
+      },
+      "urls": [ "http://www.memory.engsol.com.mx/" ]
+   },
+   "description": "Learn English Vocabulary by remembering and matching the cards with their names!",
+   "icons": {
+      "128": "icon.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDYsgPym8H2wmsjeGKRMEFdQY3mVhRyiihNE5TbJJXyRNA02zcgaDz6lsOXZElEDFl4xhV5/ZGODpYW3ILbvKFcYGl+I5qfnKk9FIeHJj+y+xdws5OCDdKXPXTC8UFnLthfIt5RNYsFFgb+Y411wsjQABy7foYWXo6Nf9oDDZQEOwIDAQAB",
+   "manifest_version": 2,
+   "name": "ENGLISH MEMORY",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0.0.2"
+}

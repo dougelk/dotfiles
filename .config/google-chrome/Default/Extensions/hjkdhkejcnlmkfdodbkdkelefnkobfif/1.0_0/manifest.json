@@ -1,0 +1,15 @@
+{
+   "app": {
+      "launch": {
+         "web_url": "http://vimeo.com/couchmode"
+      }
+   },
+   "description": "Watch collections of Vimeo videos (such as Staff Picks, your inbox, etc) completely uninterrupted.",
+   "icons": {
+      "128": "icon_128.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDLUnGFMdysbya8UCBXwfmWY210KWSI8guCPhTGWEft8+M8ufIYsiskHmxgnPaGCxc8InSD2BjRmChttv3RapiWPG5tho3EcdG8pJTkzdj5y4MHn/JZCIGwhfLl/FlyxDEb89DowOxPZSTLLpHGpVMw1rzbRWy62CKkSRWuXVJnrwIDAQAB",
+   "name": "Vimeo Couch Mode",
+   "update_url": "http://clients2.google.com/service/update2/crx",
+   "version": "1.0"
+}

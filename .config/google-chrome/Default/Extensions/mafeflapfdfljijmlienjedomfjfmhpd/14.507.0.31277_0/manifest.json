@@ -1,0 +1,12 @@
+{
+   "description": "Google Cast API",
+   "export": {
+      "resources": [ "*" ]
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAoYoToZSWkf47hO9cPEZEzRSIckiQE5ruYnvBRtYIYAUetCV87gyqXiwmmU6WKqnGtV/i+/HGFJWhpl9W53cc3J6xN+1KMiH20Z8n/5Z4OdRoEsoP856Bhdpp6zosPCSAi3SQu+J4q7JGNSsWSHiq2xdJa4GwNqGjCUrZxu/57VqVUH6E3AGfwpc9eiILo5ylk3+zna4UX5IC+nh/3Wbakp3pp8xDds8C1Dpd/sFHxqJGhjLEPYlZWlx/p3+J47DC9GT/XgY4sGY1/QshtzdwMz0mzOaScEJlzohfAeYtBreEHe1c9JP2yQPl7PWeg31bUCucjB6SfEdR+DaEvN2XMQIDAQAB",
+   "manifest_version": 2,
+   "minimum_chrome_version": "35",
+   "name": "Google Cast API",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "14.507.0.31277"
+}

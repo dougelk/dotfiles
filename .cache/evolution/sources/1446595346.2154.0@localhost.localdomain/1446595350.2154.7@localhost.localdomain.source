@@ -1,0 +1,37 @@
+[Data Source]
+DisplayName=Holidays in United States
+Enabled=true
+Parent=1446595346.2154.0@localhost.localdomain
+
+[WebDAV Backend]
+AvoidIfmatch=false
+CalendarAutoSchedule=false
+DisplayName=
+EmailAddress=
+ResourcePath=/caldav/v2/cln2stbjc4hmgrrcd5i62ua0ctp6utbg5pr2sor1dhimsp31e8n6errfctm6abj3dtmg%40virtual/events/
+ResourceQuery=
+SslTrust=
+
+[Authentication]
+Host=apidata.googleusercontent.com
+Method=OAuth2
+Port=443
+ProxyUid=system-proxy
+RememberPassword=true
+User=dougelk@gmail.com
+CredentialName=
+
+[Security]
+Method=tls
+
+[Calendar]
+BackendName=caldav
+Color=#691426
+Selected=true
+
+[Resource]
+Identity=events::https://apidata.googleusercontent.com/caldav/v2/cln2stbjc4hmgrrcd5i62ua0ctp6utbg5pr2sor1dhimsp31e8n6errfctm6abj3dtmg%40virtual/events/
+
+[Alarms]
+IncludeMe=true
+LastNotified=2015-11-04T00:02:30.194141Z

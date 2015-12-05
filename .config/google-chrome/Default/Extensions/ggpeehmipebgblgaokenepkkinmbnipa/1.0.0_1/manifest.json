@@ -1,0 +1,16 @@
+{
+   "app": {
+      "launch": {
+         "local_path": "online.html"
+      }
+   },
+   "description": "Online TV channel of NASA",
+   "icons": {
+      "128": "icon_128.png",
+      "16": "icon_16.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDpgKp7XvvMHbeSRxE7mD+QOg8BXHqauGcLdsNoIuh+fEgKreIGIYrAKcxft6urlcuwSNLmnRc0hcRI7PqHVgqCt2MR9SiHvgmqlc5L/FZCF6hYLIy9DpksoE5Dn6/jHXYhoARXB7BsironMug/B7qT/rRdpX3Zt3VU741HXHlxQwIDAQAB",
+   "name": "NASA Online TV HD",
+   "update_url": "http://clients2.google.com/service/update2/crx",
+   "version": "1.0.0"
+}

@@ -1,0 +1,23 @@
+[schema]
+version=2
+
+[/usr/lib64/mozilla/plugins/libevbrowserplugin.so]
+mtime=1442856984
+name=Evince Browser Plugin
+description=The <a href="http://wiki.gnome.org/Apps/Evince/">Evince</a> 3.18.0 plugin handles documents inside the browser window.
+mime-description=application/oxps:xps,oxps:xps documents;application/vnd.ms-xpsdocument:xps,oxps:xps documents;application/pdf:pdf:pdf documents;application/x-bzpdf:pdf.bz2:pdf documents;application/x-gzpdf:pdf.gz:pdf documents;application/x-xzpdf:pdf.xz:pdf documents;application/x-ext-pdf:pdf:pdf documents;application/postscript:ps:postscript documents;application/x-bzpostscript:ps.bz2:postscript documents;application/x-gzpostscript:ps.gz:postscript documents;image/x-eps:eps,epsi,epsf:postscript documents;image/x-bzeps:eps.bz2,epsi.bz2,epsf.bz2:postscript documents;image/x-gzeps:eps.gz,epsi.gz,epsf.gz:postscript documents;application/x-ext-ps:ps:postscript documents;application/x-ext-eps:eps,epsi,epsf:postscript documents;image/tiff:tif,tiff:tiff documents;application/x-cbr:cbr:comic books;application/x-cbz:cbz:comic books;application/x-cb7:cb7:comic books;application/x-cbt:cbt:comic books;application/x-ext-cbr:cbr:comic books;application/x-ext-cbz:cbz:comic books;application/x-ext-cb7:cb7:comic books;application/x-ext-cbt:cbt:comic books;image/vnd.djvu:djvu,djv:djvu documents;application/x-ext-djv:djv:djvu documents;application/x-ext-djvu:djvu:djvu documents
+requires-gtk2=false
+
+[/usr/lib64/mozilla/plugins/librhythmbox-itms-detection-plugin.so]
+mtime=1436039206
+name=iTunes Application Detector
+description=This plug-in detects the presence of iTunes when opening iTunes Store URLs in a web page with Firefox.
+mime-description=application/itunes-plugin::
+requires-gtk2=false
+
+[/usr/lib64/mozilla/plugins/libgnome-shell-browser-plugin.so]
+mtime=1444936385
+name=Gnome Shell Integration
+description=This plugin provides integration with Gnome Shell for live extension enabling and disabling. It can be used only by extensions.gnome.org
+mime-description=application/x-gnome-shell-integration::gnome shell integration dummy content-type
+requires-gtk2=false

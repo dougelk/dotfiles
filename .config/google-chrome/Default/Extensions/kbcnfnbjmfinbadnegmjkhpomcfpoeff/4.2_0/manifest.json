@@ -1,0 +1,21 @@
+{
+   "app": {
+      "launch": {
+         "web_url": "http://galaxybowling3d.appspot.com/"
+      }
+   },
+   "description": "A fun 3D bowling game. Unlock new balls, themed lanes, and complete your voyage of the solar system.",
+   "icons": {
+      "128": "icon128.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQChDsX8mO9vBxiNOG1qvnCdLir6ClizPp47Qmctmta7QmoFWnB6Jl+o/UxVXv+uLTT7puEpgD6r0hMpAvH2VJpFC7Qj+1x9dWunkNnLvLNO9X+kzaVtxwN4e0eBMUvs2aKe5FjhKDVBIbx2iepBNPmAcdYfDsXnFy6jWHSGU0KpBwIDAQAB",
+   "manifest_version": 2,
+   "name": "Galaxy Bowling 3D",
+   "requirements": {
+      "3D": {
+         "features": [ "css3d", "webgl" ]
+      }
+   },
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "4.2"
+}

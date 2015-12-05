@@ -1,0 +1,17 @@
+{
+   "app": {
+      "launch": {
+         "web_url": "http://geography-puzzles.pro700.com/"
+      },
+      "urls": [ "http://geography-puzzles.pro700.com/" ]
+   },
+   "description": "Computer jigsaw puzzles to familiarize yourself with geography",
+   "icons": {
+      "128": "icon_128.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDAoDEUnz8mqnM7Odg4s5xMkW2+sIsHM5Lrif78VmOTgdbn0iN8isIcNcCv8v7v3tBWiYA/EaNWNCV64y24x3cDcShu3rwPqf3n6F5dzu9zcMtnXrfkCRHpw8PShzkxggQNQUB0SBzZcxWuLAwyJTaOwXCRc40NKqj7+Hw+cE9+AwIDAQAB",
+   "manifest_version": 2,
+   "name": "geography puzzles",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.4"
+}

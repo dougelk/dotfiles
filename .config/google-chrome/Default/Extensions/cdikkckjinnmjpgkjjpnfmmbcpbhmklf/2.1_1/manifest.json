@@ -1,0 +1,16 @@
+{
+   "app": {
+      "launch": {
+         "web_url": "https://chrome.brainpop.com/"
+      }
+   },
+   "description": "Learn something new every day with BrainPOP's free Featured Movie and quiz.",
+   "icons": {
+      "128": "chrome_icon_128x128.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC+GgxjrD7rx/Kc3WWBk+5+tNmtdGlbAbusIWkneMT2NBsLhUV4Sucpjo8oAr2ff9fWB74trVQpFh5YQKI3N9wEviIwR4Y6fbYSWLt5OyrnTuoed7+410zhO0jDaKQVDpZ2/7MowrZOa9KCFVbwoZfZpG3P0aYh04JPKhpVpyxw+wIDAQAB",
+   "manifest_version": 2,
+   "name": "BrainPOP Featured Movie",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.1"
+}

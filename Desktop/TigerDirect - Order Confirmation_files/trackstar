@@ -1,0 +1,1 @@
+sidecar.app.handleTracking({"success":"true","messages":["Queued view.","Queued transaction."],"user_key":"mb48-56589794a4ad04.44390118","session_key":"sess-48-56589794a4b4d5.14817539","callback":"sidecar.app.handleTracking","service":"view"});

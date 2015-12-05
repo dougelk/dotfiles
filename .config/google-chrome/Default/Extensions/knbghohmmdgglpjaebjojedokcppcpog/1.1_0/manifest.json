@@ -1,0 +1,24 @@
+{
+   "background": {
+      "scripts": [ "urlchange.js" ]
+   },
+   "browser_action": {
+      "default_icon": "icon128.png",
+      "default_title": "NBCSports.com"
+   },
+   "content_scripts": [ {
+      "js": [ "manasa.js" ],
+      "matches": [ "http://*/*", "https://*/*" ]
+   } ],
+   "description": "NBCSports.com - Live Extra Schedule. PREMIER LEAGUE SCHEDULE. All Games updated live Score, News, videos are available in NBCSPORTS.",
+   "icons": {
+      "128": "icon128.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvFk68GVTKUEWGx/BAk+0WqUz6WCrpyeClOv2wynHF/GwdfihrpOpQKYLv98Dufw4roH5mZviAgSpg2akzJXpewL9gDQiZtvetwUCz40Jj7NcQLZeMiyZCb5zo8rvPG8jcJmacHk8gP+esgPbk68psqxxAlcP4bmjME/x+T+C+5vt+gFnClPJlGkFA60T/zUvW2VXkdQ9Uvk+nIcwkuK779KJNo9xAGofa9tJPSP42OzRCcbnnJ0QDUkZQh9e/pctKydBNY5MmU8wB4UwO62Urx3rYp7Nqz5/oo7uM6M00ihDhm7jTRm9scHGNneWlrxFQ+Bw/ufgBNHZX1XuyzcnGwIDAQAB",
+   "manifest_version": 2,
+   "name": "NBCSports.com",
+   "permissions": [ "tabs", "webNavigation", "cookies", "contextMenus", "notifications", "unlimitedStorage", "clipboardWrite", "idle", "http://*/*", "https://*/*" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.1",
+   "web_accessible_resources": [ "urlchange.js", "jquery-1.9.1.min.js" ]
+}

@@ -1,0 +1,993 @@
+
+<!DOCTYPE html>
+
+<html lang="en-US" prefix="og: http://ogp.me/ns#">
+
+	<head>
+		
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" >
+		<meta name="theme-color" content="#294172">
+																		
+		<title>What&#039;s new in Fedora 23 Workstation - Fedora Magazine</title>
+		<link rel="shortcut icon" href="https://fedoramagazine.org/wp-content/themes/fedoramagazine/favicon.ico" />	
+				 
+		<!-- Jetpack Site Verification Tags -->
+<meta name="google-site-verification" content="0VLV2JI6fXqQIJHGXnxgPbK_yrF3xxuzQI0-cpSdxoA" />
+
+<!-- This site is optimized with the Yoast SEO plugin v2.3.5 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="Read about some of the new features in Fedora 23 Workstation, just released (2015-Nov-03)."/>
+<link rel="canonical" href="https://fedoramagazine.org/whats-new-in-fedora-23-workstation/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="What&#039;s new in Fedora 23 Workstation - Fedora Magazine" />
+<meta property="og:description" content="Read about some of the new features in Fedora 23 Workstation, just released (2015-Nov-03)." />
+<meta property="og:url" content="https://fedoramagazine.org/whats-new-in-fedora-23-workstation/" />
+<meta property="og:site_name" content="Fedora Magazine" />
+<meta property="article:section" content="Fedora Project community" />
+<meta property="article:published_time" content="2015-11-03T11:03:45+00:00" />
+<meta property="article:modified_time" content="2015-11-04T19:11:55+00:00" />
+<meta property="og:updated_time" content="2015-11-04T19:11:55+00:00" />
+<meta property="og:image" content="https://fedoramagazine.org/wp-content/uploads/2015/11/23ws.png" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:description" content="Read about some of the new features in Fedora 23 Workstation, just released (2015-Nov-03)."/>
+<meta name="twitter:title" content="What&#039;s new in Fedora 23 Workstation - Fedora Magazine"/>
+<meta name="twitter:site" content="@fedora"/>
+<meta name="twitter:domain" content="Fedora Magazine"/>
+<meta name="twitter:image" content="https://fedoramagazine.org/wp-content/uploads/2015/11/23ws.png"/>
+<meta name="twitter:creator" content="@ryanlerch"/>
+<!-- / Yoast SEO plugin. -->
+
+<link rel="alternate" type="application/rss+xml" title="Fedora Magazine &raquo; Feed" href="https://fedoramagazine.org/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Fedora Magazine &raquo; Comments Feed" href="https://fedoramagazine.org/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Fedora Magazine &raquo; What&#8217;s new in Fedora 23 Workstation Comments Feed" href="https://fedoramagazine.org/whats-new-in-fedora-23-workstation/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"https:\/\/fedoramagazine.org\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.3.1"}};
+			!function(a,b,c){function d(a){var c=b.createElement("canvas"),d=c.getContext&&c.getContext("2d");return d&&d.fillText?(d.textBaseline="top",d.font="600 32px Arial","flag"===a?(d.fillText(String.fromCharCode(55356,56812,55356,56807),0,0),c.toDataURL().length>3e3):(d.fillText(String.fromCharCode(55357,56835),0,0),0!==d.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='yarppWidgetCss-css'  href='https://fedoramagazine.org/wp-content/plugins/yet-another-related-posts-plugin/style/widget.css?ver=4.3.1' type='text/css' media='all' />
+<link rel='stylesheet' id='openid-css'  href='https://fedoramagazine.org/wp-content/plugins/openid/f/openid.css?ver=519' type='text/css' media='all' />
+<link rel='stylesheet' id='genericons-css'  href='https://fedoramagazine.org/wp-content/plugins/jetpack/_inc/genericons/genericons/genericons.css?ver=3.1' type='text/css' media='all' />
+<link rel='stylesheet' id='jetpack_css-css'  href='https://fedoramagazine.org/wp-content/plugins/jetpack/css/jetpack.css?ver=3.8.0' type='text/css' media='all' />
+<link rel='stylesheet' id='baskerville_googleFonts-css'  href='//fonts.googleapis.com/css?family=Roboto+Slab%3A400%2C700%7CRoboto%3A400%2C400italic%2C700%2C700italic%2C300%7CPacifico%3A400&#038;ver=4.3.1' type='text/css' media='all' />
+<link rel='stylesheet' id='baskerville_style-css'  href='https://fedoramagazine.org/wp-content/themes/fedoramagazine/style.css?ver=4.3.1' type='text/css' media='all' />
+<script type='text/javascript' src='https://fedoramagazine.org/wp-includes/js/jquery/jquery.js?ver=1.11.3'></script>
+<script type='text/javascript' src='https://fedoramagazine.org/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+<script type='text/javascript' src='https://fedoramagazine.org/wp-content/plugins/openid/f/openid.js?ver=519'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://fedoramagazine.org/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://fedoramagazine.org/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.3.1" />
+<link rel='shortlink' href='https://wp.me/p3XX0v-2M1' />
+	
+	</head>
+	
+	<body class="single single-post postid-10665 single-format-standard has-featured-image">
+		<div class="header-overlay section-inner">
+			<a href="/"><div class="header-overlay-inner">
+				
+			</div></a>	
+		</div>
+		<div class="header section small-padding bg-dark bg-image">
+			<div class="cover"></div>
+			
+			<div class="header-search-block bg-graphite hidden">
+			
+				<form method="get" class="searchform" action="https://fedoramagazine.org/">
+	<input type="search" value="" placeholder="Search form" name="s" class="s" /> 
+	<input type="submit" class="searchsubmit" value="Search">
+</form>			
+			</div> <!-- /header-search-block -->
+					
+			<div class="header-inner section-inner">
+				<div class="socialbuttons rss">
+					<a href="feed/">
+					<div class="socialbuttons-button">
+					 	<div class="greyscale"></div>
+						<div class="color"></div>
+					</div></a>
+				</div>
+				<div class="socialbuttons google">
+					<a href="https://plus.google.com/+fedora/">
+					<div class="socialbuttons-button">
+					 	<div class="greyscale"></div>
+						<div class="color"></div>
+					</div></a>
+				</div>
+				<div class="socialbuttons twitter">
+					<a href="https://twitter.com/fedora">
+					<div class="socialbuttons-button">
+					 	<div class="greyscale"></div>
+						<div class="color"></div>
+					</div></a>
+				</div>
+				<div class="socialbuttons facebook">
+					<a href="https://www.facebook.com/TheFedoraProject"><div class="socialbuttons-button">
+					 	<div class="greyscale"></div>
+						<div class="color"></div>
+					</div></a>
+				</div>
+			
+				<!--								
+						<h1 class="blog-title">
+							<a href="https://fedoramagazine.org" title="Fedora Magazine &mdash; " rel="home">Fedora Magazine</a>
+						</h1>
+						
+																
+				 -->
+							
+			</div> <!-- /header-inner -->
+						
+		</div> <!-- /header -->
+		
+		<!--<div class="navigation section no-padding">
+		
+			<div class="navigation-inner section-inner">
+			
+				<div class="nav-toggle fleft hidden">
+					
+					<div class="bar"></div>
+					<div class="bar"></div>
+					<div class="bar"></div>
+					
+					<div class="clear"></div>
+					
+				</div>
+						
+				<ul class="main-menu">
+				
+					<li class="page_item page-item-380"><a href="https://fedoramagazine.org/contact-us/">Contact Us</a></li>
+<li class="page_item page-item-2078"><a href="https://fedoramagazine.org/logging-into-fedora-magazine-with-fas/">Logging into Fedora Magazine with FAS</a></li>
+<li class="page_item page-item-8667"><a href="https://fedoramagazine.org/publishing-workflow/">Publishing Workflow</a></li>
+<li class="page_item page-item-2215"><a href="https://fedoramagazine.org/submit-an-idea-or-tip/">Submit an idea or tip</a></li>
+<li class="page_item page-item-1296"><a href="https://fedoramagazine.org/terms-and-conditions/">Terms and Conditions</a></li>
+<li class="page_item page-item-9211"><a href="https://fedoramagazine.org/writing-an-article-for-the-fedora-magazine/">Writing an Article for the Fedora Magazine</a></li>
+											
+				 </ul> <!-- /main-menu -->
+				 
+				 <!--<a class="search-toggle fright" href="#"></a>-->
+				 
+				 <!--<div class="clear"></div>-->
+				 
+			<!-- </div> /navigation-inner -->
+			
+		<!-- </div>  /navigation -->
+		
+		<div class="mobile-navigation section bg-graphite no-padding hidden">
+					
+			<ul class="mobile-menu">
+			
+				<li class="page_item page-item-380"><a href="https://fedoramagazine.org/contact-us/">Contact Us</a></li>
+<li class="page_item page-item-2078"><a href="https://fedoramagazine.org/logging-into-fedora-magazine-with-fas/">Logging into Fedora Magazine with FAS</a></li>
+<li class="page_item page-item-8667"><a href="https://fedoramagazine.org/publishing-workflow/">Publishing Workflow</a></li>
+<li class="page_item page-item-2215"><a href="https://fedoramagazine.org/submit-an-idea-or-tip/">Submit an idea or tip</a></li>
+<li class="page_item page-item-1296"><a href="https://fedoramagazine.org/terms-and-conditions/">Terms and Conditions</a></li>
+<li class="page_item page-item-9211"><a href="https://fedoramagazine.org/writing-an-article-for-the-fedora-magazine/">Writing an Article for the Fedora Magazine</a></li>
+										
+			 </ul> <!-- /main-menu -->
+		
+		</div> <!-- /mobile-navigation -->
+<div class="wrapper section medium-padding">
+										
+	<div class="section-inner">
+	
+		<div class="content fleft">
+												        
+									
+				<div id="post-10665" class="post-10665 post type-post status-publish format-standard has-post-thumbnail hentry category-fedora-project">
+				
+									
+					<div class="post-header">
+						
+					    <h2 class="post-title"><a href="https://fedoramagazine.org/whats-new-in-fedora-23-workstation/" rel="bookmark" title="What&#8217;s new in Fedora 23 Workstation">What&#8217;s new in Fedora 23 Workstation</a></h2>
+					    
+					</div> <!-- /post-header -->
+					
+										
+						<div class="featured-media">
+						
+							<img width="945" height="400" src="https://fedoramagazine.org/wp-content/uploads/2015/11/23ws-945x400.png" class="attachment-post-image wp-post-image" alt="23ws" />							
+																
+						</div> <!-- /featured-media -->
+					
+																			                                    	    
+					<div class="post-content">
+						    		            			            	                                                                                            
+						<p>Fedora 23 Workstation <a href="http://fedoramagazine.org/fedora-23-released">is now released</a>. It&#8217;s a reliable, user-friendly, and powerful operating system aimed at home users, hobbyists, students, and software developers. Fedora 23 Workstation features the latest <a href="https://help.gnome.org/misc/release-notes/3.18/">GNOME 3.18</a> release courtesy of the GNOME community. This release of GNOME includes updates to the Files browser, and the new Calendar and Todo applications. Fedora 23 Workstation is the first release of Fedora to include <a href="https://www.libreoffice.org/discover/new-features/">LibreOffice 5</a>.</p>
+<p><a class="image" href="https://fedoraproject.org/wiki/File:Fedora23.png"><img src="https://fedoraproject.org/w/uploads/c/c7/Fedora23.png" alt="Fedora23.png" /></a></p>
+<h3><span id="Files" class="mw-headline"> Files </span></h3>
+<p>The Files browser, also known as Nautilus, now gives progress feedback when copying or moving large files. A button in the header bar allows you to see progress at a glance. Searching and renaming files in the file browser is now also quicker and easier to use.</p>
+<p>There&#8217;s now better support for your Google Drive contents, too. If you&#8217;ve set up a Google online account in the Control Center, you&#8217;ll see your Google Drive contents in Files, with a shortcut to Drive in the sidebar. Check out the <a href="https://help.gnome.org/misc/release-notes/3.18/">GNOME 3.18 Release Notes</a> for more information on improvements to Files in Fedora 23 workstation.</p>
+<p><a href="http://fedoramagazine.org/wp-content/uploads/2015/11/files.png"><img class="size-full wp-image-10670 aligncenter" src="http://fedoramagazine.org/wp-content/uploads/2015/11/files.png" alt="files" width="969" height="306" /></a></p>
+<h3><span id="LibreOffice_5" class="mw-headline">LibreOffice 5 </span></h3>
+<p>Fedora 23 Workstation ships with <a href="https://www.libreoffice.org/discover/new-features/">LibreOffice 5</a>, the newest version of the widely used productivity suite. LibreOffice features LibreOffice Writer for creating documents, LibreOffice Calc for spreadsheets, and LibreOffice Impress for presentations. LibreOffice 5 comes with many new features and improvements, including:</p>
+<ul>
+<li>Style previews in the sidebar</li>
+<li>Built-in image crop</li>
+<li>UI for data bars in Calc</li>
+<li>Support for Time-Stamp Protocol in PDF export</li>
+<li>Improved import and export to a variety of different types of files</li>
+<li>Improved support for HiDPI screens</li>
+<li>&#8230;and more!</li>
+</ul>
+<p><a href="http://fedoramagazine.org/wp-content/uploads/2015/11/libreoffice5.png"><img class="alignnone size-full wp-image-10672" src="http://fedoramagazine.org/wp-content/uploads/2015/11/libreoffice5.png" alt="libreoffice5" width="1193" height="444" /></a></p>
+<h3>New Calendar application</h3>
+<p>The new Calendar application provides a simple way to edit and use your calendars. It includes month and year views of your important dates and simple searching. Calendars can be locally stored on your Fedora Workstation, or you can add remote calendars from sources like Google Calendar and OwnCloud.</p>
+<p>The new Calendar application is integrated with Online Accounts on your Fedora Workstation. When you add an online account in the control center, the calendar application shows calendars from those accounts.</p>
+<p><a href="http://fedoramagazine.org/wp-content/uploads/2015/11/calendar.png"><img class="alignnone size-full wp-image-10675" src="http://fedoramagazine.org/wp-content/uploads/2015/11/calendar.png" alt="calendar" width="1187" height="419" /></a></p>
+<h3>Builder IDE</h3>
+<p>Builder is also significantly better in Fedora 23 Workstation. It introduces new and improved features such as:</p>
+<ul>
+<li>Integrated terminal and system monitor</li>
+<li>More accurate code auto-completion</li>
+<li>Code auto-completion for Python</li>
+<li>Searchable documentation index</li>
+<li>Build target list</li>
+<li>Searchable list of symbols for the current file</li>
+<li>&#8230;and more!</li>
+</ul>
+<p><a href="http://fedoramagazine.org/wp-content/uploads/2015/11/builder.png"><img class="alignnone size-full wp-image-10676" src="http://fedoramagazine.org/wp-content/uploads/2015/11/builder.png" alt="builder" width="1147" height="324" /></a></p>
+<h3>Firmware Updates</h3>
+<p>The <a href="http://www.fwupd.org/">Linux Vendor Firmware Service</a> is now integrated into the Software application in Fedora 23 Workstation. The Software app will notify you if there are firmware updates available for your hardware, such as BIOS updates. You can then install them directly from Software.</p>
+<p><a href="http://fedoramagazine.org/wp-content/uploads/2015/11/firmware.png"><img class="alignnone size-full wp-image-10674" src="http://fedoramagazine.org/wp-content/uploads/2015/11/firmware.png" alt="firmware" width="1000" height="408" /></a></p>
+<h3>Wayland</h3>
+<p><a href="http://wayland.freedesktop.org/">Wayland</a> support in Fedora 23 Workstation has also been improved. It&#8217;s still available as a preview by using the GNOME Wayland session when you login. After you select your user account to login, select the gear icon to choose the Wayland session. The Workstation team is currently planning to make Wayland the default display server in Fedora in Fedora 24.</p>
+<h3>Getting and Installing Fedora 23 Workstation</h3>
+<p>To install Fedora Workstation on a new machine, <a href="https://getfedora.org/workstation/download">download</a> the live image, <a href="http://fedoramagazine.org/how-to-copy-the-fedora-install-dvd-to-a-usb-drive/">copy it to a USB Drive</a>, then boot into it. To upgrade a previous Fedora Workstation install, <a href="/upgrading-from-fedora-22-to-fedora-23">check out our guide here</a> on the Fedora Magazine.</p>
+<div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon-text sd-sharing"><h3 class="sd-title">Share:</h3><div class="sd-content"><ul><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-10665" class="share-google-plus-1 sd-button share-icon" href="https://fedoramagazine.org/whats-new-in-fedora-23-workstation/?share=google-plus-1" target="_blank" title="Click to share on Google+"><span>Google</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-10665" class="share-facebook sd-button share-icon" href="https://fedoramagazine.org/whats-new-in-fedora-23-workstation/?share=facebook" target="_blank" title="Share on Facebook"><span>Facebook</span></a></li><li class="share-tumblr"><a rel="nofollow" data-shared="" class="share-tumblr sd-button share-icon" href="https://fedoramagazine.org/whats-new-in-fedora-23-workstation/?share=tumblr" target="_blank" title="Click to share on Tumblr"><span>Tumblr</span></a></li><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-10665" class="share-twitter sd-button share-icon" href="https://fedoramagazine.org/whats-new-in-fedora-23-workstation/?share=twitter" target="_blank" title="Click to share on Twitter"><span>Twitter</span></a></li><li class="share-reddit"><a rel="nofollow" data-shared="" class="share-reddit sd-button share-icon" href="https://fedoramagazine.org/whats-new-in-fedora-23-workstation/?share=reddit" target="_blank" title="Click to share on Reddit"><span>Reddit</span></a></li><li class="share-end"></li></ul></div></div></div>								
+												
+						<div class="clear"></div>
+									        
+					</div> <!-- /post-content -->
+					            					
+					<div class="post-meta-container">
+						
+						<div class="post-author">
+						
+							<div class="post-author-content">
+							
+								<h4>Ryan Lerch</h4>
+								
+								<p>Ryan is a designer that works on stuff for Fedora. He uses Fedora Workstation as his primary desktop, along with the best tools from the Libre Graphics world, notably, the vector graphics editor, Inkscape.</p>
+								
+																
+								<div class="author-links">
+									
+									<a class="author-link-posts" title="Author archive" href="https://fedoramagazine.org/author/ryanlerch/">Author archive</a>
+									
+																		
+										<a class="author-link-website" title="Author website" href="http://ryanlerch.id.fedoraproject.org/">Author website</a>
+										
+																		
+										<a class="author-link-twitter" title="@ryanlerch on Twitter" href="http://www.twitter.com/ryanlerch">@ryanlerch on Twitter</a>
+										
+																		
+								</div> <!-- /author-links -->
+							
+							</div> <!-- /post-author-content -->
+						
+						</div> <!-- /post-author -->
+						
+						<div class="post-meta">
+						
+							<p class="post-date">November 3, 2015</p>
+							
+														
+							<p class="post-categories"><a href="https://fedoramagazine.org/category/fedora-project/" rel="category tag">Fedora Project community</a></p>
+							
+														
+							<div class="clear"></div>
+							
+							<div class="post-nav">
+							
+																
+									<a class="post-nav-prev" title="Previous post: Upgrading from Fedora 22 to Fedora 23" href="https://fedoramagazine.org/upgrading-from-fedora-22-to-fedora-23/">Previous post</a>
+							
+																
+																	
+									<a class="post-nav-next" title="Next post: Fedora Marketing is Not a Spectator Sport" href="https://fedoramagazine.org/fedora-marketing-is-not-a-spectator-sport/">Next post</a>
+							
+																
+																	
+								<div class="clear"></div>
+							
+							</div>
+						
+						</div> <!-- /post-meta -->
+						
+						<div class="clear"></div>
+							
+					</div> <!-- /post-meta-container -->
+																		
+					
+		
+		<div class="comments">
+		
+			<a name="comments"></a>
+			
+			<div class="comments-title-container">
+				
+				<h2 class="comments-title fleft">
+				
+					7 Comments					
+				</h2>
+				
+								
+					<h2 class="add-comment-title fright"><a href="#respond">Add yours</a></h2>
+				
+								
+				<div class="clear"></div>
+			
+			</div> <!-- /comments-title-container -->
+	
+			<ol class="commentlist">
+			    	<li class="comment even thread-even depth-1" id="li-comment-449800">
+	
+		<div id="comment-449800" class="comment">
+		
+			<img alt='' src='https://secure.gravatar.com/avatar/271bf2280d5f0a22fca75ae5c84183d2?s=80&#038;d=retro&#038;r=g' srcset='https://secure.gravatar.com/avatar/271bf2280d5f0a22fca75ae5c84183d2?s=160&amp;d=retro&amp;r=g 2x' class='avatar avatar-80 photo' height='80' width='80' />		
+			<div class="comment-inner">
+
+				<div class="comment-header">
+											
+					<cite class="fn">Logan</cite>					
+					<p><a href="https://fedoramagazine.org/whats-new-in-fedora-23-workstation/#comment-449800">November 3, 2015 at 16:13</a></p>
+					
+					<div class="comment-actions">
+					
+												
+						<a rel='nofollow' class='comment-reply-link' href='https://fedoramagazine.org/whats-new-in-fedora-23-workstation/?replytocom=449800#respond' onclick='return addComment.moveForm( "comment-449800", "449800", "respond", "10665" )' aria-label='Reply to Logan'>Reply</a>						
+						<div class="clear"></div>
+					
+					</div> <!-- /comment-actions -->
+					
+				</div> <!-- /comment-header -->
+
+				<div class="comment-content">
+				
+									
+					<p>I have been hyped about Fedora 23 since i first heard about it</p>
+					
+				</div><!-- /comment-content -->
+				
+				<div class="comment-actions-below hidden">
+					
+										
+					<a rel='nofollow' class='comment-reply-link' href='https://fedoramagazine.org/whats-new-in-fedora-23-workstation/?replytocom=449800#respond' onclick='return addComment.moveForm( "comment-449800", "449800", "respond", "10665" )' aria-label='Reply to Logan'>Reply</a>					
+					<div class="clear"></div>
+				
+				</div> <!-- /comment-actions -->
+				
+			</div> <!-- /comment-inner -->
+
+		</div><!-- /comment-## -->
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-449896">
+	
+		<div id="comment-449896" class="comment">
+		
+			<img alt='' src='https://secure.gravatar.com/avatar/95fae4ea121a66242565a7e3bb3f5319?s=80&#038;d=retro&#038;r=g' srcset='https://secure.gravatar.com/avatar/95fae4ea121a66242565a7e3bb3f5319?s=160&amp;d=retro&amp;r=g 2x' class='avatar avatar-80 photo' height='80' width='80' />		
+			<div class="comment-inner">
+
+				<div class="comment-header">
+											
+					<cite class="fn">DaKine23</cite>					
+					<p><a href="https://fedoramagazine.org/whats-new-in-fedora-23-workstation/#comment-449896">November 4, 2015 at 04:57</a></p>
+					
+					<div class="comment-actions">
+					
+												
+						<a rel='nofollow' class='comment-reply-link' href='https://fedoramagazine.org/whats-new-in-fedora-23-workstation/?replytocom=449896#respond' onclick='return addComment.moveForm( "comment-449896", "449896", "respond", "10665" )' aria-label='Reply to DaKine23'>Reply</a>						
+						<div class="clear"></div>
+					
+					</div> <!-- /comment-actions -->
+					
+				</div> <!-- /comment-header -->
+
+				<div class="comment-content">
+				
+									
+					<p>Just updated F22 -&gt; F23. No problems great version of a great distro. But testing Wayland with the statement &#8220;will be default in 24&#8221; i think you should improve performance and stability a lot until you make that step.</p>
+<p>Good luck guys,<br />
+keep doing what you do!</p>
+					
+				</div><!-- /comment-content -->
+				
+				<div class="comment-actions-below hidden">
+					
+										
+					<a rel='nofollow' class='comment-reply-link' href='https://fedoramagazine.org/whats-new-in-fedora-23-workstation/?replytocom=449896#respond' onclick='return addComment.moveForm( "comment-449896", "449896", "respond", "10665" )' aria-label='Reply to DaKine23'>Reply</a>					
+					<div class="clear"></div>
+				
+				</div> <!-- /comment-actions -->
+				
+			</div> <!-- /comment-inner -->
+
+		</div><!-- /comment-## -->
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-449910">
+	
+		<div id="comment-449910" class="comment">
+		
+			<img alt='' src='https://secure.gravatar.com/avatar/0d4b300b9c5a57a5b59601e06edaddd4?s=80&#038;d=retro&#038;r=g' srcset='https://secure.gravatar.com/avatar/0d4b300b9c5a57a5b59601e06edaddd4?s=160&amp;d=retro&amp;r=g 2x' class='avatar avatar-80 photo' height='80' width='80' />		
+			<div class="comment-inner">
+
+				<div class="comment-header">
+											
+					<cite class="fn">ifoolb</cite>					
+					<p><a href="https://fedoramagazine.org/whats-new-in-fedora-23-workstation/#comment-449910">November 4, 2015 at 07:21</a></p>
+					
+					<div class="comment-actions">
+					
+												
+						<a rel='nofollow' class='comment-reply-link' href='https://fedoramagazine.org/whats-new-in-fedora-23-workstation/?replytocom=449910#respond' onclick='return addComment.moveForm( "comment-449910", "449910", "respond", "10665" )' aria-label='Reply to ifoolb'>Reply</a>						
+						<div class="clear"></div>
+					
+					</div> <!-- /comment-actions -->
+					
+				</div> <!-- /comment-header -->
+
+				<div class="comment-content">
+				
+									
+					<p>One thing I don&#8217;t like about Software(packagekit) is that software installed by packagekit will be removed if I run dnf autoremove. Some packages installed as dependencies just can&#8217;t be removed all together without issuing such command, so, autoremove is still there even though I&#8217;ve heard something like &#8216;dnf tolerates other package managers so&#8230;&#8217;</p>
+					
+				</div><!-- /comment-content -->
+				
+				<div class="comment-actions-below hidden">
+					
+										
+					<a rel='nofollow' class='comment-reply-link' href='https://fedoramagazine.org/whats-new-in-fedora-23-workstation/?replytocom=449910#respond' onclick='return addComment.moveForm( "comment-449910", "449910", "respond", "10665" )' aria-label='Reply to ifoolb'>Reply</a>					
+					<div class="clear"></div>
+				
+				</div> <!-- /comment-actions -->
+				
+			</div> <!-- /comment-inner -->
+
+		</div><!-- /comment-## -->
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-449917">
+	
+		<div id="comment-449917" class="comment">
+		
+			<img alt='' src='https://secure.gravatar.com/avatar/aafbea1083e043811eb7d62c91f5583b?s=80&#038;d=retro&#038;r=g' srcset='https://secure.gravatar.com/avatar/aafbea1083e043811eb7d62c91f5583b?s=160&amp;d=retro&amp;r=g 2x' class='avatar avatar-80 photo' height='80' width='80' />		
+			<div class="comment-inner">
+
+				<div class="comment-header">
+											
+					<cite class="fn">dave</cite>					
+					<p><a href="https://fedoramagazine.org/whats-new-in-fedora-23-workstation/#comment-449917">November 4, 2015 at 07:42</a></p>
+					
+					<div class="comment-actions">
+					
+												
+						<a rel='nofollow' class='comment-reply-link' href='https://fedoramagazine.org/whats-new-in-fedora-23-workstation/?replytocom=449917#respond' onclick='return addComment.moveForm( "comment-449917", "449917", "respond", "10665" )' aria-label='Reply to dave'>Reply</a>						
+						<div class="clear"></div>
+					
+					</div> <!-- /comment-actions -->
+					
+				</div> <!-- /comment-header -->
+
+				<div class="comment-content">
+				
+									
+					<p>The opening mentions potential users, but business users are not mentioned.  What about small businesses?</p>
+<p>Dave</p>
+					
+				</div><!-- /comment-content -->
+				
+				<div class="comment-actions-below hidden">
+					
+										
+					<a rel='nofollow' class='comment-reply-link' href='https://fedoramagazine.org/whats-new-in-fedora-23-workstation/?replytocom=449917#respond' onclick='return addComment.moveForm( "comment-449917", "449917", "respond", "10665" )' aria-label='Reply to dave'>Reply</a>					
+					<div class="clear"></div>
+				
+				</div> <!-- /comment-actions -->
+				
+			</div> <!-- /comment-inner -->
+
+		</div><!-- /comment-## -->
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-449974">
+	
+		<div id="comment-449974" class="comment">
+		
+			<img alt='' src='https://secure.gravatar.com/avatar/210ebfaffdc42c9a20766f494db2798b?s=80&#038;d=retro&#038;r=g' srcset='https://secure.gravatar.com/avatar/210ebfaffdc42c9a20766f494db2798b?s=160&amp;d=retro&amp;r=g 2x' class='avatar avatar-80 photo' height='80' width='80' />		
+			<div class="comment-inner">
+
+				<div class="comment-header">
+											
+					<cite class="fn"><a href='http://ziup@aa.pl' rel='external nofollow' class='url'>staszek</a></cite>					
+					<p><a href="https://fedoramagazine.org/whats-new-in-fedora-23-workstation/#comment-449974">November 4, 2015 at 16:21</a></p>
+					
+					<div class="comment-actions">
+					
+												
+						<a rel='nofollow' class='comment-reply-link' href='https://fedoramagazine.org/whats-new-in-fedora-23-workstation/?replytocom=449974#respond' onclick='return addComment.moveForm( "comment-449974", "449974", "respond", "10665" )' aria-label='Reply to staszek'>Reply</a>						
+						<div class="clear"></div>
+					
+					</div> <!-- /comment-actions -->
+					
+				</div> <!-- /comment-header -->
+
+				<div class="comment-content">
+				
+									
+					<p>No nvidia support in xorg 1.18, going back to 22.</p>
+					
+				</div><!-- /comment-content -->
+				
+				<div class="comment-actions-below hidden">
+					
+										
+					<a rel='nofollow' class='comment-reply-link' href='https://fedoramagazine.org/whats-new-in-fedora-23-workstation/?replytocom=449974#respond' onclick='return addComment.moveForm( "comment-449974", "449974", "respond", "10665" )' aria-label='Reply to staszek'>Reply</a>					
+					<div class="clear"></div>
+				
+				</div> <!-- /comment-actions -->
+				
+			</div> <!-- /comment-inner -->
+
+		</div><!-- /comment-## -->
+	<ul class="children">
+	<li class="comment byuser comment-author-ryanlerch bypostauthor odd alt depth-2" id="li-comment-449978">
+	
+		<div id="comment-449978" class="comment">
+		
+			<img alt='' src='https://secure.gravatar.com/avatar/70316775017b196ded95244e23b8a094?s=80&#038;d=retro&#038;r=g' srcset='https://secure.gravatar.com/avatar/70316775017b196ded95244e23b8a094?s=160&amp;d=retro&amp;r=g 2x' class='avatar avatar-80 photo' height='80' width='80' />		
+			<div class="comment-inner">
+
+				<div class="comment-header">
+											
+					<cite class="fn"><a href='http://ryanlerch.id.fedoraproject.org/' rel='external nofollow' class='openid_link url'>Ryan Lerch</a></cite>					
+					<p><a href="https://fedoramagazine.org/whats-new-in-fedora-23-workstation/#comment-449978">November 4, 2015 at 18:03</a></p>
+					
+					<div class="comment-actions">
+					
+												
+						<a rel='nofollow' class='comment-reply-link' href='https://fedoramagazine.org/whats-new-in-fedora-23-workstation/?replytocom=449978#respond' onclick='return addComment.moveForm( "comment-449978", "449978", "respond", "10665" )' aria-label='Reply to Ryan Lerch'>Reply</a>						
+						<div class="clear"></div>
+					
+					</div> <!-- /comment-actions -->
+					
+				</div> <!-- /comment-header -->
+
+				<div class="comment-content">
+				
+									
+					<p>I assume you mean the proprietary Nvidia binary driver rather than the open source Nouveau driver in the Fedora repositories?</p>
+					
+				</div><!-- /comment-content -->
+				
+				<div class="comment-actions-below hidden">
+					
+										
+					<a rel='nofollow' class='comment-reply-link' href='https://fedoramagazine.org/whats-new-in-fedora-23-workstation/?replytocom=449978#respond' onclick='return addComment.moveForm( "comment-449978", "449978", "respond", "10665" )' aria-label='Reply to Ryan Lerch'>Reply</a>					
+					<div class="clear"></div>
+				
+				</div> <!-- /comment-actions -->
+				
+			</div> <!-- /comment-inner -->
+
+		</div><!-- /comment-## -->
+	</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-450108">
+	
+		<div id="comment-450108" class="comment">
+		
+			<img alt='' src='https://secure.gravatar.com/avatar/8cc4e61bd9ce07ff6f52a6fbd4357ddb?s=80&#038;d=retro&#038;r=g' srcset='https://secure.gravatar.com/avatar/8cc4e61bd9ce07ff6f52a6fbd4357ddb?s=160&amp;d=retro&amp;r=g 2x' class='avatar avatar-80 photo' height='80' width='80' />		
+			<div class="comment-inner">
+
+				<div class="comment-header">
+											
+					<cite class="fn">Paulo Fernano</cite>					
+					<p><a href="https://fedoramagazine.org/whats-new-in-fedora-23-workstation/#comment-450108">November 5, 2015 at 08:03</a></p>
+					
+					<div class="comment-actions">
+					
+												
+						<a rel='nofollow' class='comment-reply-link' href='https://fedoramagazine.org/whats-new-in-fedora-23-workstation/?replytocom=450108#respond' onclick='return addComment.moveForm( "comment-450108", "450108", "respond", "10665" )' aria-label='Reply to Paulo Fernano'>Reply</a>						
+						<div class="clear"></div>
+					
+					</div> <!-- /comment-actions -->
+					
+				</div> <!-- /comment-header -->
+
+				<div class="comment-content">
+				
+									
+					<p>Parabens a todos que contribuiram para mais esta exelente edição do FC23,está muito linda e funcional.Thanks very much!</p>
+					
+				</div><!-- /comment-content -->
+				
+				<div class="comment-actions-below hidden">
+					
+										
+					<a rel='nofollow' class='comment-reply-link' href='https://fedoramagazine.org/whats-new-in-fedora-23-workstation/?replytocom=450108#respond' onclick='return addComment.moveForm( "comment-450108", "450108", "respond", "10665" )' aria-label='Reply to Paulo Fernano'>Reply</a>					
+					<div class="clear"></div>
+				
+				</div> <!-- /comment-actions -->
+				
+			</div> <!-- /comment-inner -->
+
+		</div><!-- /comment-## -->
+	</li><!-- #comment-## -->
+			</ol>
+			
+							
+						
+		</div><!-- /comments -->
+		
+		
+		
+							<div id="respond" class="comment-respond">
+				<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/whats-new-in-fedora-23-workstation/#respond" style="display:none;">Cancel reply</a></small></h3>
+									<form action="https://fedoramagazine.org/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+																			<p class="comment-notes">Your email address will not be published.</p>							<p class="comment-form-author"><input id="author" name="author" type="text" placeholder="Name" value="" size="30" /><label for="author">Author</label> <span class="required">*</span></p>
+<p class="comment-form-email"><input id="email" name="email" type="text" placeholder="Email" value="" size="30" /><label for="email">Email</label> <span class="required">*</span></p>
+<p class="comment-form-url"><input id="url" name="url" type="text" placeholder="Website" value="" size="30" /><label for="url">Website</label></p>
+												<p class="comment-form-comment"><textarea id="comment" name="comment" cols="45" rows="6" required></textarea></p>						
+						<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='10665' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="584b186498" /></p>		<span id="openid_comment">
+			<label>
+				<input type="checkbox" id="login_with_openid" name="login_with_openid" checked="checked" />
+				Authenticate this comment using <span class="openid_link">OpenID</span>.			</label>
+		</span>
+		<script type="text/javascript">jQuery(function(){ add_openid_to_comment_form('https://fedoramagazine.org/index.php', '732c8016da') })</script>
+<p class="comment-subscription-form"><input type="checkbox" name="subscribe_comments" id="subscribe_comments" value="subscribe" style="width: auto; -moz-appearance: checkbox; -webkit-appearance: checkbox;" /> <label class="subscribe-label" id="subscribe-label" for="subscribe_comments">Notify me of follow-up comments by email.</label></p><p class="comment-subscription-form"><input type="checkbox" name="subscribe_blog" id="subscribe_blog" value="subscribe" style="width: auto; -moz-appearance: checkbox; -webkit-appearance: checkbox;" /> <label class="subscribe-label" id="subscribe-blog-label" for="subscribe_blog">Notify me of new posts by email.</label></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="36"/></p>					</form>
+							</div><!-- #respond -->
+															                        
+			   	    
+		
+			</div> <!-- /post -->
+		
+		</div> <!-- /content -->
+		
+		
+	<div class="sidebar fright" role="complementary">
+	
+		<div class="widget widget_search"><div class="widget-content"><form method="get" class="searchform" action="https://fedoramagazine.org/">
+	<input type="search" value="" placeholder="Search form" name="s" class="s" /> 
+	<input type="submit" class="searchsubmit" value="Search">
+</form></div><div class="clear"></div></div><div class="widget jetpack_subscription_widget"><div class="widget-content"><h3 class="widget-title">Subscribe to Fedora Magazine via Email</h3>
+			<form action="#" method="post" accept-charset="utf-8" id="subscribe-blog-blog_subscription-5">
+				<div id="subscribe-text"></div><p>Join 1,564 other subscribers</p>
+					<p id="subscribe-email">
+						<label id="jetpack-subscribe-label" for="subscribe-field-blog_subscription-5; ?>">
+							Email Address						</label>
+						<input type="email" name="email" required="required" class="required" value="" id="subscribe-field-blog_subscription-5" placeholder="Email Address" />
+					</p>
+
+					<p id="subscribe-submit">
+						<input type="hidden" name="action" value="subscribe" />
+						<input type="hidden" name="source" value="https://fedoramagazine.org/whats-new-in-fedora-23-workstation/" />
+						<input type="hidden" name="sub-type" value="widget" />
+						<input type="hidden" name="redirect_fragment" value="blog_subscription-5" />
+												<input type="submit" value="Subscribe" name="jetpack_subscriptions_widget" />
+					</p>
+							</form>
+
+			<script>
+			/*
+			Custom functionality for safari and IE
+			 */
+			(function( d ) {
+				// Creates placeholders for IE
+				if ( ( 'placeholder' in d.createElement( 'input' ) ) ) {
+					var label = d.getElementById( 'jetpack-subscribe-label' );
+						label.style.clip 	 = 'rect(1px, 1px, 1px, 1px)';
+						label.style.position = 'absolute';
+						label.style.height   = '1px';
+						label.style.width    = '1px';
+						label.style.overflow = 'hidden';
+				}
+
+				// Make sure the email value is filled in before allowing submit
+				var form = d.getElementById('subscribe-blog-blog_subscription-5'),
+					input = d.getElementById('subscribe-field-blog_subscription-5'),
+					handler = function( event ) {
+						if ( '' === input.value ) {
+							input.focus();
+
+							if ( event.preventDefault ){
+								event.preventDefault();
+							}
+
+							return false;
+						}
+					};
+
+				if ( window.addEventListener ) {
+					form.addEventListener( 'submit', handler, false );
+				} else {
+					form.attachEvent( 'onsubmit', handler );
+				}
+			})( document );
+			</script>
+				
+</div><div class="clear"></div></div><div class="widget widget_yarpp_widget"><div class="widget-content"><div class='yarpp-related-widget'>
+<h3 class="widget-title">Related Posts</h3>
+		<ol>
+					<a href="https://fedoramagazine.org/update-wayland-support-fedora-23/" rel="bookmark"><div>
+			<div class="related-thumb" style="background-image: url('https://fedoramagazine.org/wp-content/uploads/2015/08/wayland.png')">
+			</div>
+			<div class="related-title">
+				Update on Wayland support in Fedora			</div>
+		</div></a>
+					<a href="https://fedoramagazine.org/whats-new-fedora-22-workstation/" rel="bookmark"><div>
+			<div class="related-thumb" style="background-image: url('https://fedoramagazine.org/wp-content/uploads/2015/05/22workstation.jpg')">
+			</div>
+			<div class="related-title">
+				What&#8217;s new in Fedora 22 Workstation			</div>
+		</div></a>
+					<a href="https://fedoramagazine.org/stream-music-phone-fedora-workstation/" rel="bookmark"><div>
+			<div class="related-thumb" style="background-image: url('https://fedoramagazine.org/wp-content/uploads/2015/05/streammusicfedora22.png')">
+			</div>
+			<div class="related-title">
+				Stream music from your phone to Fedora Workstation			</div>
+		</div></a>
+					<a href="https://fedoramagazine.org/test-drive-gnome-3-18-fedora-23-beta/" rel="bookmark"><div>
+			<div class="related-thumb" style="background-image: url('https://fedoramagazine.org/wp-content/uploads/2015/09/gnome3-18.png')">
+			</div>
+			<div class="related-title">
+				Test drive GNOME 3.18 in Fedora 23 Beta			</div>
+		</div></a>
+			</ol>
+</div>
+</div><div class="clear"></div></div><div class="widget widget_magazine_recent_widget"><div class="widget-content">			<h3 class="widget-title">Recent Posts</h3>
+			<a href="https://fedoramagazine.org/getting-ansible-working-fedora-23/"><div>
+							<div class="related-thumb" style="background-image: url(https://fedoramagazine.org/wp-content/uploads/2015/11/ansible_wordmark_black.png)">
+							</div><div class="related-title">Getting Ansible Working on Fedora 23</div></div></a><a href="https://fedoramagazine.org/systemd-converting-sysvinit-scripts/"><div>
+							<div class="related-thumb" style="background-image: url(https://fedoramagazine.org/wp-content/uploads/2015/10/systemd-part3.jpg)">
+							</div><div class="related-title">systemd: Converting sysvinit scripts</div></div></a><a href="https://fedoramagazine.org/fedora-marketing-is-not-a-spectator-sport/"><div>
+							<div class="related-thumb" style="background-image: url(https://fedoramagazine.org/wp-content/uploads/2015/11/get-involved-marketing.jpg)">
+							</div><div class="related-title">Fedora Marketing is Not a Spectator Sport</div></div></a>	</div><div class="clear"></div></div>		
+	</div><!-- /sidebar -->
+
+		
+		<div class="clear"></div>
+		
+	</div> <!-- /section-inner -->
+
+</div> <!-- /wrapper -->
+		
+<div class="footer section medium-padding bg-graphite">
+	
+	<div class="section-inner row">
+	
+				
+			<div class="column column-1 one-third">
+			
+				<div class="widgets">
+		
+					<div class="widget widget_search"><div class="widget-content"><form method="get" class="searchform" action="https://fedoramagazine.org/">
+	<input type="search" value="" placeholder="Search form" name="s" class="s" /> 
+	<input type="submit" class="searchsubmit" value="Search">
+</form></div><div class="clear"></div></div><div class="widget widget_text"><div class="widget-content">			<div class="textwidget">Read about how you can <a href="http://fedoramagazine.org/submit-an-idea-or-tip">submit an idea</a> or even <a href="http://fedoramagazine.org/writing-an-article-for-the-fedora-magazine/">write an article</a> for Fedora Magazine.</div>
+		</div><div class="clear"></div></div>										
+				</div>
+				
+			</div>
+			
+		 <!-- /footer-a -->
+			
+				
+			<div class="column column-2 one-third">
+			
+				<div class="widgets">
+				
+					<div class="widget widget_recent_entries">
+					
+						<div class="widget-content">
+						
+							<h3 class="widget-title">Latest posts</h3>
+							
+							<ul>
+				                <li><a href="https://fedoramagazine.org/getting-ansible-working-fedora-23/" title="Getting Ansible Working on Fedora 23" >Getting Ansible Working on Fedora 23</a> </li> <li><a href="https://fedoramagazine.org/systemd-converting-sysvinit-scripts/" title="systemd: Converting sysvinit scripts" >systemd: Converting sysvinit scripts</a> </li> <li><a href="https://fedoramagazine.org/fedora-marketing-is-not-a-spectator-sport/" title="Fedora Marketing is Not a Spectator Sport" >Fedora Marketing is Not a Spectator Sport</a> </li> <li><a href="https://fedoramagazine.org/whats-new-in-fedora-23-workstation/" title="What&#039;s new in Fedora 23 Workstation" >What's new in Fedora 23 Workstation</a> </li> <li><a href="https://fedoramagazine.org/upgrading-from-fedora-22-to-fedora-23/" title="Upgrading from Fedora 22 to Fedora 23" >Upgrading from Fedora 22 to Fedora 23</a> </li> 							</ul>
+			                
+						</div>
+						
+	                </div>
+									
+				</div> <!-- /widgets -->
+				
+			</div>
+			
+		 <!-- /footer-b -->
+							
+				
+			<div class="column column-3 one-third">
+		
+				<div class="widgets">
+		
+					<div class="widget jetpack_subscription_widget"><div class="widget-content"><h3 class="widget-title">Subscribe to Fedora Magazine via Email</h3>
+			<form action="#" method="post" accept-charset="utf-8" id="subscribe-blog-blog_subscription-4">
+				<div id="subscribe-text"><p>Enter your email address to subscribe to this blog and receive notifications of new posts by email.</p>
+</div><p>Join 1,564 other subscribers</p>
+					<p id="subscribe-email">
+						<label id="jetpack-subscribe-label" for="subscribe-field-blog_subscription-4; ?>">
+							Email Address						</label>
+						<input type="email" name="email" required="required" class="required" value="" id="subscribe-field-blog_subscription-4" placeholder="Email Address" />
+					</p>
+
+					<p id="subscribe-submit">
+						<input type="hidden" name="action" value="subscribe" />
+						<input type="hidden" name="source" value="https://fedoramagazine.org/whats-new-in-fedora-23-workstation/" />
+						<input type="hidden" name="sub-type" value="widget" />
+						<input type="hidden" name="redirect_fragment" value="blog_subscription-4" />
+												<input type="submit" value="Subscribe" name="jetpack_subscriptions_widget" />
+					</p>
+							</form>
+
+			<script>
+			/*
+			Custom functionality for safari and IE
+			 */
+			(function( d ) {
+				// Creates placeholders for IE
+				if ( ( 'placeholder' in d.createElement( 'input' ) ) ) {
+					var label = d.getElementById( 'jetpack-subscribe-label' );
+						label.style.clip 	 = 'rect(1px, 1px, 1px, 1px)';
+						label.style.position = 'absolute';
+						label.style.height   = '1px';
+						label.style.width    = '1px';
+						label.style.overflow = 'hidden';
+				}
+
+				// Make sure the email value is filled in before allowing submit
+				var form = d.getElementById('subscribe-blog-blog_subscription-4'),
+					input = d.getElementById('subscribe-field-blog_subscription-4'),
+					handler = function( event ) {
+						if ( '' === input.value ) {
+							input.focus();
+
+							if ( event.preventDefault ){
+								event.preventDefault();
+							}
+
+							return false;
+						}
+					};
+
+				if ( window.addEventListener ) {
+					form.addEventListener( 'submit', handler, false );
+				} else {
+					form.attachEvent( 'onsubmit', handler );
+				}
+			})( document );
+			</script>
+				
+</div><div class="clear"></div></div>										
+				</div> <!-- /widgets -->
+				
+			</div>
+			
+		 <!-- /footer-c -->
+		
+		<div class="clear"></div>
+	
+	</div> <!-- /footer-inner -->
+
+</div> <!-- /footer -->
+
+<div class="credits section bg-dark small-padding">
+
+	<div class="credits-inner section-inner">
+
+		<p class="credits-left">
+		
+			The opinions expressed on this website are those of each author, not of the author's employer or of Red Hat. Fedora Magazine aspires to publish all content under a Creative Commons license but may not be able to do so in all cases. You are responsible for ensuring that you have the necessary permission to reuse any work on this site. The Fedora logo is a trademark of Red Hat, Inc. <a href="/terms-and-conditions">Terms and Conditions</a>
+		
+		</p>
+		<div class="clear"></div>
+	
+	</div> <!-- /credits-inner -->
+	
+</div> <!-- /credits -->
+
+
+	<script type="text/javascript">
+		window.WPCOM_sharing_counts = {"https:\/\/fedoramagazine.org\/whats-new-in-fedora-23-workstation\/":10665};
+	</script>
+		<script type="text/javascript">
+			var windowOpen;
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-google-plus-1' ).on( 'click', function() {
+				if ( 'undefined' !== typeof windowOpen ){ // If there's another sharing window open, close it.
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery(this).attr( 'href' ), 'wpcomgoogle-plus-1', 'menubar=1,resizable=1,width=480,height=550' );
+				return false;
+			});
+		});
+		</script>
+				<script type="text/javascript">
+			var windowOpen;
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-facebook' ).on( 'click', function() {
+				if ( 'undefined' !== typeof windowOpen ){ // If there's another sharing window open, close it.
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery(this).attr( 'href' ), 'wpcomfacebook', 'menubar=1,resizable=1,width=600,height=400' );
+				return false;
+			});
+		});
+		</script>
+				<script type="text/javascript">
+			var windowOpen;
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-tumblr' ).on( 'click', function() {
+				if ( 'undefined' !== typeof windowOpen ){ // If there's another sharing window open, close it.
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery(this).attr( 'href' ), 'wpcomtumblr', 'menubar=1,resizable=1,width=450,height=450' );
+				return false;
+			});
+		});
+		</script>
+				<script type="text/javascript">
+			var windowOpen;
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-twitter' ).on( 'click', function() {
+				if ( 'undefined' !== typeof windowOpen ){ // If there's another sharing window open, close it.
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery(this).attr( 'href' ), 'wpcomtwitter', 'menubar=1,resizable=1,width=600,height=350' );
+				return false;
+			});
+		});
+		</script>
+		<script type='text/javascript' src='https://fedoramagazine.org/wp-content/plugins/akismet/_inc/form.js?ver=3.1.5'></script>
+<link rel='stylesheet' id='yarppRelatedCss-css'  href='https://fedoramagazine.org/wp-content/plugins/yet-another-related-posts-plugin/style/related.css?ver=4.3.1' type='text/css' media='all' />
+<script type='text/javascript' src='https://fedoramagazine.org/wp-includes/js/comment-reply.min.js?ver=4.3.1'></script>
+<script type='text/javascript' src='https://s0.wp.com/wp-content/js/devicepx-jetpack.js?ver=201545'></script>
+<script type='text/javascript' src='https://fedoramagazine.org/wp-includes/js/masonry.min.js?ver=3.1.2'></script>
+<script type='text/javascript' src='https://fedoramagazine.org/wp-content/themes/fedoramagazine/js/imagesloaded.pkgd.js?ver=4.3.1'></script>
+<script type='text/javascript' src='https://fedoramagazine.org/wp-content/themes/fedoramagazine/js/mediaelement-and-player.min.js?ver=4.3.1'></script>
+<script type='text/javascript' src='https://fedoramagazine.org/wp-content/themes/fedoramagazine/js/flexslider.min.js?ver=4.3.1'></script>
+<script type='text/javascript' src='https://fedoramagazine.org/wp-content/themes/fedoramagazine/js/global.js?ver=4.3.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var sharing_js_options = {"lang":"en","counts":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://fedoramagazine.org/wp-content/plugins/jetpack/modules/sharedaddy/sharing.js?ver=3.8.0'></script>
+<script type='text/javascript' src='https://stats.wp.com/e-201545.js' async defer></script>
+<script type='text/javascript'>
+	_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:3.8.0',blog:'58617187',post:'10665',tz:'-5',srv:'fedoramagazine.org'} ]);
+	_stq.push([ 'clickTrackerInit', '58617187', '10665' ]);
+</script>
+
+</body>
+</html>
+��YQ      V;��V;��;��l       ?:https://fedoramagazine.org/whats-new-in-fedora-23-workstation/ necko:classified 1 security-info FnhllAKWRHGAlo+ESXykKAAAAAAAAAAAwAAAAAAAAEaphjojH6pBabDSgSnsfLHeAAQAAgAAAAAAAAAAAAAAAAAAAAAB4vFIJp5wRkeyPxAQ9RJGKPqbqVvKO0mKuIl8ec8o/uhmCjImkVxP+7sgiYWmMt8F+O2DZM7ZTG6GukivU8OT5gAAAAAAAAZlMIIGYTCCBUmgAwIBAgIQDtLb4DPVoM/+A5KZwG1GBDANBgkqhkiG9w0BAQsFADBwMQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMRkwFwYDVQQLExB3d3cuZGlnaWNlcnQuY29tMS8wLQYDVQQDEyZEaWdpQ2VydCBTSEEyIEhpZ2ggQXNzdXJhbmNlIFNlcnZlciBDQTAeFw0xNDA0MjQwMDAwMDBaFw0xNzA0MjgxMjAwMDBaMGwxCzAJBgNVBAYTAlVTMRcwFQYDVQQIEw5Ob3J0aCBDYXJvbGluYTEQMA4GA1UEBxMHUmFsZWlnaDEVMBMGA1UEChMMUmVkIEhhdCBJbmMuMRswGQYDVQQDExJmZWRvcmFtYWdhemluZS5vcmcwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQDNo+cJKeJGeLk0h/my8p2zBEGjrNA1tv9lrNiqPnCm+I3+Jx6C8VGd35Wbov/dQnt5oX6OMVMHQ53ltGfxj7OGoDV2wYjRR7z2LkJuf11Ws9FpEbFvuNzEY+J5GUOqOaZxSElpJLGcwvvgfbJLtuTpGr9S+w1ftrC+EUek0Xp2aFU3wOnza2Try8vcHitftEAZiG0dShp0/r96nczm0lwBJ5rHhTDvfIeq8WBy7yQ4Hh9lnwy02FDyGAMWw5wMilmtaxRSkWFt9Vb4xhGf12Kg6aEE5t+xOHsELBflbhCdlEpERqW3nGT/I+b6Mt+CREBKGorpNhFqB5oAUr5nh0f4oPzUrE0BnJenpjwcklB5BIe3kJX5e2Gh4ufqWjY6nlDmemvM3HzdurCpCZrA5D/cH9YJRcCYh4ej/ar71tvkVL5qcz7mg8hy9iTwZNgfut0boy958Bc2eqzP88xz6+Tvpp1YDE8fV9ptc4IhtNv/uuWku5N0ga1HLwL+1m2E/iQznjKLvdKls1484C0vRDuq/r6xU0iURJool+XPYwjkRC487DP486rdXj4ApTMlptLXYGANInli4mXzTq7bL8CNB0dPZeucwFMMVgg9rMs9zFqsSfVAsL7TjeLU9eSgvzaWWfkRAcj3DMDYPOd8GIRw0TyOBB4gRN1kBJb3wH7hTwIDAQABo4IB+TCCAfUwHwYDVR0jBBgwFoAUUWj/kK8CB3U8zNllZGKiErhZcjswHQYDVR0OBBYEFGzPxyNwCHLgRorn0qeGwz1ndU2qMDUGA1UdEQQuMCyCEmZlZG9yYW1hZ2F6aW5lLm9yZ4IWd3d3LmZlZG9yYW1hZ2F6aW5lLm9yZzAOBgNVHQ8BAf8EBAMCBaAwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMHUGA1UdHwRuMGwwNKAyoDCGLmh0dHA6Ly9jcmwzLmRpZ2ljZXJ0LmNvbS9zaGEyLWhhLXNlcnZlci1nMi5jcmwwNKAyoDCGLmh0dHA6Ly9jcmw0LmRpZ2ljZXJ0LmNvbS9zaGEyLWhhLXNlcnZlci1nMi5jcmwwQgYDVR0gBDswOTA3BglghkgBhv1sAQEwKjAoBggrBgEFBQcCARYcaHR0cHM6Ly93d3cuZGlnaWNlcnQuY29tL0NQUzCBgwYIKwYBBQUHAQEEdzB1MCQGCCsGAQUFBzABhhhodHRwOi8vb2NzcC5kaWdpY2VydC5jb20wTQYIKwYBBQUHMAKGQWh0dHA6Ly9jYWNlcnRzLmRpZ2ljZXJ0LmNvbS9EaWdpQ2VydFNIQTJIaWdoQXNzdXJhbmNlU2VydmVyQ0EuY3J0MAwGA1UdEwEB/wQCMAAwDQYJKoZIhvcNAQELBQADggEBAGFO3UaBAeR1USlQF56PD53gAVSwEldHkNtMHYXkEu0qvivBugIOzw9GIxGNDi5r61B6dFZ8kwBsTd9yRI++H1rdjhfhB4Zim1JFjlrrC5q7wKqENoWpQetTVhWW1EgMZf3Z3FkWbFEUUJTzFr32e8PxWiNyNEwo3AGkBmDszqU4U5J6ZslQ7R+IbIfLYfXLaOboJbZXbbjuG9E8RsXqLzG7HuC5MEed/wBQPMc8hMVPFUdE3vxItKFy/vCo7eG2/jS7lOBOiusNvGAMpr5mZHcufaUrFl13Z3dL/pR/vAQ0L+6vzZVQpyXCCSnIqsprhsKmSTeWGkhHwwAaKZzPmlLALwADAAAAAAEBAAA= request-method GET response-head HTTP/1.1 200 OK
+Date: Fri, 06 Nov 2015 00:51:56 GMT
+Server: Apache/2.4.6 (Red Hat Enterprise Linux) OpenSSL/1.0.1e-fips PHP/5.4.16
+X-Powered-By: PHP/5.4.16
+X-Pingback: https://fedoramagazine.org/xmlrpc.php
+Link: <https://wp.me/p3XX0v-2M1>; rel=shortlink
+Content-Type: text/html; charset=UTF-8
+X-Varnish: 20242401 20981851
+Age: 4
+Via: 1.1 varnish-v4
+Content-Length: 53669
+Accept-Ranges: bytes
+AppTime: D=7858
+AppServer: proxy01.phx2.fedoraproject.org
+ charset UTF-8 uncompressed-len 0 predictor::resource-count 72 predictor::https://fedoramagazine.org/wp-content/plugins/yet-another-related-posts-plugin/style/widget.css?ver=4.3.1 1,1,1446771122,0 predictor::https://fedoramagazine.org/wp-content/plugins/openid/f/openid.css?ver=519 1,1,1446771122,0 predictor::https://fedoramagazine.org/wp-content/plugins/jetpack/_inc/genericons/genericons/genericons.css?ver=3.1 1,1,1446771122,0 predictor::https://fedoramagazine.org/wp-content/plugins/jetpack/css/jetpack.css?ver=3.8.0 1,1,1446771122,0 predictor::https://fonts.googleapis.com/css?family=Roboto+Slab%3A400%2C700%7CRoboto%3A400%2C400italic%2C700%2C700italic%2C300%7CPacifico%3A400&ver=4.3.1 1,1,1446771122,0 predictor::https://fedoramagazine.org/wp-content/themes/fedoramagazine/style.css?ver=4.3.1 1,1,1446771122,0 predictor::https://fedoramagazine.org/wp-includes/js/jquery/jquery.js?ver=1.11.3 1,1,1446771122,0 predictor::https://fedoramagazine.org/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1 1,1,1446771122,0 predictor::https://fedoramagazine.org/wp-content/plugins/openid/f/openid.js?ver=519 1,1,1446771122,0 predictor::https://fedoramagazine.org/wp-includes/js/wp-emoji-release.min.js?ver=4.3.1 1,1,1446771122,0 predictor::https://fedoramagazine.org/wp-content/uploads/2015/11/23ws-945x400.png 1,1,1446771122,0 predictor::https://fedoraproject.org/w/uploads/c/c7/Fedora23.png 1,1,1446771122,0 predictor::http://fedoramagazine.org/wp-content/uploads/2015/11/files.png 1,1,1446771122,0 predictor::http://fedoramagazine.org/wp-content/uploads/2015/11/libreoffice5.png 1,1,1446771122,0 predictor::http://fedoramagazine.org/wp-content/uploads/2015/11/calendar.png 1,1,1446771122,0 predictor::http://fedoramagazine.org/wp-content/uploads/2015/11/builder.png 1,1,1446771122,0 predictor::http://fedoramagazine.org/wp-content/uploads/2015/11/firmware.png 1,1,1446771122,0 predictor::https://secure.gravatar.com/avatar/271bf2280d5f0a22fca75ae5c84183d2?s=80&d=retro&r=g 1,1,1446771122,0 predictor::https://secure.gravatar.com/avatar/95fae4ea121a66242565a7e3bb3f5319?s=80&d=retro&r=g 1,1,1446771122,0 predictor::https://secure.gravatar.com/avatar/0d4b300b9c5a57a5b59601e06edaddd4?s=80&d=retro&r=g 1,1,1446771122,0 predictor::https://secure.gravatar.com/avatar/aafbea1083e043811eb7d62c91f5583b?s=80&d=retro&r=g 1,1,1446771122,0 predictor::https://secure.gravatar.com/avatar/210ebfaffdc42c9a20766f494db2798b?s=80&d=retro&r=g 1,1,1446771122,0 predictor::https://secure.gravatar.com/avatar/70316775017b196ded95244e23b8a094?s=80&d=retro&r=g 1,1,1446771122,0 predictor::https://secure.gravatar.com/avatar/8cc4e61bd9ce07ff6f52a6fbd4357ddb?s=80&d=retro&r=g 1,1,1446771122,0 predictor::https://fedoramagazine.org/wp-content/plugins/akismet/_inc/form.js?ver=3.1.5 1,1,1446771122,0 predictor::https://fedoramagazine.org/wp-content/plugins/yet-another-related-posts-plugin/style/related.css?ver=4.3.1 1,1,1446771122,0 predictor::https://fedoramagazine.org/wp-includes/js/comment-reply.min.js?ver=4.3.1 1,1,1446771122,0 predictor::https://s0.wp.com/wp-content/js/devicepx-jetpack.js?ver=201545 1,1,1446771122,0 predictor::https://fedoramagazine.org/wp-includes/js/masonry.min.js?ver=3.1.2 1,1,1446771122,0 predictor::https://fedoramagazine.org/wp-content/themes/fedoramagazine/js/imagesloaded.pkgd.js?ver=4.3.1 1,1,1446771122,0 predictor::https://fedoramagazine.org/wp-content/themes/fedoramagazine/js/mediaelement-and-player.min.js?ver=4.3.1 1,1,1446771122,0 predictor::https://fedoramagazine.org/wp-content/themes/fedoramagazine/js/flexslider.min.js?ver=4.3.1 1,1,1446771122,0 predictor::https://fedoramagazine.org/wp-content/themes/fedoramagazine/js/global.js?ver=4.3.1 1,1,1446771122,0 predictor::https://fedoramagazine.org/wp-content/plugins/jetpack/modules/sharedaddy/sharing.js?ver=3.8.0 1,1,1446771122,0 predictor::https://stats.wp.com/e-201545.js 1,1,1446771122,0 predictor::https://fedoramagazine.org/wp-content/themes/fedoramagazine/images/fmag-ribbon.png 1,1,1446771122,0 predictor::https://fedoramagazine.org/wp-content/themes/fedoramagazine/images/fedoramagazinetext.png 1,1,1446771122,0 predictor::https://fedoramagazine.org/wp-content/themes/fedoramagazine/images/icons/rss-grey.png 1,1,1446771122,0 predictor::https://fedoramagazine.org/wp-content/themes/fedoramagazine/images/icons/rss-color.png 1,1,1446771122,0 predictor::https://fedoramagazine.org/wp-content/themes/fedoramagazine/images/icons/google+-grey.png 1,1,1446771122,0 predictor::https://fedoramagazine.org/wp-content/themes/fedoramagazine/images/icons/google+-color.png 1,1,1446771122,0 predictor::https://fedoramagazine.org/wp-content/themes/fedoramagazine/images/icons/twitter-grey.png 1,1,1446771122,0 predictor::https://fedoramagazine.org/wp-content/themes/fedoramagazine/images/icons/twitter-color.png 1,1,1446771122,0 predictor::https://fedoramagazine.org/wp-content/themes/fedoramagazine/images/icons/facebook-grey.png 1,1,1446771122,0 predictor::https://fedoramagazine.org/wp-content/themes/fedoramagazine/images/icons/facebook-color.png 1,1,1446771122,0 predictor::https://fedoramagazine.org/wp-content/themes/fedoramagazine/images/icons/1x/author-w.png 1,1,1446771122,0 predictor::https://fedoramagazine.org/wp-content/themes/fedoramagazine/images/icons/1x/archive-w.png 1,1,1446771122,0 predictor::https://fedoramagazine.org/wp-content/themes/fedoramagazine/images/icons/1x/home-w.png 1,1,1446771122,0 predictor::https://fedoramagazine.org/wp-content/themes/fedoramagazine/images/icons/1x/social/twitter-w.png 1,1,1446771122,0 predictor::https://fedoramagazine.org/wp-content/themes/fedoramagazine/images/icons/1x/folder-g.png 1,1,1446771122,0 predictor::https://fedoramagazine.org/wp-content/themes/fedoramagazine/images/icons/1x/prev-g.png 1,1,1446771122,0 predictor::https://fedoramagazine.org/wp-content/themes/fedoramagazine/images/icons/1x/next-g.png 1,1,1446771122,0 predictor::https://fedoramagazine.org/wp-content/themes/fedoramagazine/images/icons/1x/reply-w.png 1,1,1446771122,0 predictor::https://fedoramagazine.org/wp-content/plugins/openid/f/openid.gif 1,1,1446771122,0 predictor::https://fedoramagazine.org/wp-content/themes/fedoramagazine/images/icons/1x/author-g.png 1,1,1446771122,0 predictor::https://fedoramagazine.org/wp-content/themes/fedoramagazine/images/icons/1x/social/mail-g.png 1,1,1446771122,0 predictor::https://fedoramagazine.org/wp-content/themes/fedoramagazine/images/icons/1x/home-g.png 1,1,1446771122,0 predictor::https://fedoramagazine.org/wp-content/themes/fedoramagazine/images/icons/1x/spyglass-g.png 1,1,1446771122,0 predictor::https://fedoramagazine.org/wp-content/uploads/2015/08/wayland.png 1,1,1446771122,0 predictor::https://fedoramagazine.org/wp-content/uploads/2015/05/22workstation.jpg 1,1,1446771122,0 predictor::https://fedoramagazine.org/wp-content/uploads/2015/05/streammusicfedora22.png 1,1,1446771122,0 predictor::https://fedoramagazine.org/wp-content/uploads/2015/09/gnome3-18.png 1,1,1446771122,0 predictor::https://fedoramagazine.org/wp-content/uploads/2015/11/ansible_wordmark_black.png 1,1,1446771122,0 predictor::https://fedoramagazine.org/wp-content/uploads/2015/10/systemd-part3.jpg 1,1,1446771122,0 predictor::https://fedoramagazine.org/wp-content/uploads/2015/11/get-involved-marketing.jpg 1,1,1446771122,0 predictor::https://fonts.gstatic.com/s/roboto/v15/CWB0XYA8bzo0kSThX0UTuA.woff2 1,1,1446771122,0 predictor::https://fonts.gstatic.com/s/robotoslab/v6/dazS1PrQQuCxC3iOAJFEJYlIZu-HDpmDIZMigmsroc4.woff2 1,1,1446771122,0 predictor::https://fonts.gstatic.com/s/roboto/v15/d-6IYplOFocCacKzxwXSOFtXRa8TVwTICgirnJhmVJw.woff2 1,1,1446771122,0 predictor::https://fonts.gstatic.com/s/robotoslab/v6/y7lebkjgREBJK96VQi37Zo4P5ICox8Kq3LLUNMylGO4.woff2 1,1,1446771122,0 predictor::https://pixel.wp.com/g.gif?v=ext&j=1%3A3.8.0&blog=58617187&post=10665&tz=-5&srv=fedoramagazine.org&host=fedoramagazine.org&ref=https%3A%2F%2Fstart.fedoraproject.org%2F&rand=0.9289851582149676 1,1,1446771122,0 predictor::https://graph.facebook.com/?callback=WPCOMSharing.update_facebook_count&ids=https%3A%2F%2Ffedoramagazine.org%2Fwhats-new-in-fedora-23-workstation%2F&_=1446771123489 1,1,1446771122,0 predictor::https://pixel.wp.com/g.gif?v=wpcom-no-pv&x_sharing-count-request=facebook&r=0.7210441423353252 1,1,1446771122,0   ѥ

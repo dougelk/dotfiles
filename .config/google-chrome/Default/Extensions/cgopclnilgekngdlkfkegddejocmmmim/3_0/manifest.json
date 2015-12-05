@@ -1,0 +1,16 @@
+{
+   "app": {
+      "launch": {
+         "web_url": "http://flashcardstash.com"
+      },
+      "urls": [ "http://flashcardstash.com/" ]
+   },
+   "description": "Flashcard Stash takes flashcard learning to a whole new level!",
+   "icons": {
+      "128": "icon_128.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDRnzk2yH3szQXunxWnCleoDsY5lcS+SQzC7NPyoZ2ciQIcJ2vTPDFpWV0kUigQuh255dVxc2kXCaQCTaevYkwFtNvpMrbCDE3X7asa9pVZURCd72oTLjJtMcPiAMDkv52EXBBQ9CGf/coo+nZSLGTHIrMVbs3XecKrwWmV4j1SRQIDAQAB",
+   "name": "Flashcard Stash",
+   "update_url": "http://clients2.google.com/service/update2/crx",
+   "version": "3"
+}

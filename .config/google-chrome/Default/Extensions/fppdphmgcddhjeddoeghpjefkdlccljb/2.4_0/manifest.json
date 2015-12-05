@@ -1,0 +1,16 @@
+{
+   "app": {
+      "launch": {
+         "web_url": "https://play.google.com/movies/"
+      },
+      "urls": [ "https://play.google.com/movies/" ]
+   },
+   "description": "Watch the movies you love, everywhere you go.",
+   "icons": {
+      "128": "icon_128_adjusted.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCtZJ5SmNmdrLINBLfuMSWqaazaiXjvUo07ptsVXtgiJBjISQggHYIhcIUE7hAWNQYCLs4/UGRMpTtCnXoHb5x1Tz3ssJHAMbl6oHFfEBsEXxgaMtBv1/PNjbBYGiz1npZ/AcdWKiib8KkgLZInTW8tI1QEAahh76NLBTvjD3UKSQIDAQAB",
+   "name": "Google Play Movies",
+   "update_url": "http://clients2.google.com/service/update2/crx",
+   "version": "2.4"
+}

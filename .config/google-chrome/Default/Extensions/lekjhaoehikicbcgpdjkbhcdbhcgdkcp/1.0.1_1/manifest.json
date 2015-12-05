@@ -1,0 +1,18 @@
+{
+   "app": {
+      "launch": {
+         "web_url": "http://dailymotion.com"
+      },
+      "urls": [ "http://dailymotion.com/" ]
+   },
+   "default_locale": "en",
+   "description": "__MSG_appDescription__",
+   "icons": {
+      "128": "Icon-128.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCi31HBS4pHLd+qzbSFwrWSvk5tm+ggLqLoPEkz8JPJX/GJzFYEPHurIAnMw+K6vtmx1YoPixWJf7wqW+7xfufOYMtCOioblhLssfbYxx+w5zudBc7D4XT0EQO6R6+mezUt8gfpMP1E8R3/e12vMHE46SAqRmPU3Ga8rt1ZfnG3awIDAQAB",
+   "name": "Dailymotion",
+   "permissions": [ "unlimitedStorage", "notifications", "geolocation" ],
+   "update_url": "http://clients2.google.com/service/update2/crx",
+   "version": "1.0.1"
+}

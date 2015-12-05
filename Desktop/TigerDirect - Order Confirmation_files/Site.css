@@ -1,0 +1,37 @@
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+.field-validation-valid { display: none; }
+.input-validation-error { border: 1px solid #ff0000; background-color: #ffeeee; }
+input[type=radio].input-validation-error { border: 1px solid #ff0000; background-color: #ffeeee; outline: 1px solid #ff0000; }
+.validation-summary-valid{display:none;}
+.validation-summary-errors{display:block;border:#eaa4a4 1px solid;background:#ffd8d8 url(//images.highspeedbackbone.net/checkout/icon-alert_v3.png) no-repeat 7px 10px;color:#b51217;padding:8px 10px 7px 35px;margin-bottom:10px;}
+.validation-summary-errors h1, .validation-summary-errors span{color:#b51217;font-size:18px;margin:0!important;}
+.validation-summary-errors ul{list-style-type:none;}
+.validation-summary-errors ul li{margin:1px 0;}
+
+.field-validation-error{background:url(//images.highspeedbackbone.net/checkout/icon-alert-arrow.png) no-repeat 0 50%;color:#b51217;display:block;font-size:11px;text-indent:15px;}
+.validation-summary-valid { display: none; }
+#tooltip { position: absolute; z-index: 3000; border: 1px solid #111; background-color: #eee; padding: 5px; }
+#tooltip h3, #tooltip div { margin: 0; }
+#ajax-loader { position: absolute; left: 50%; top: 50%; margin-left: -32px; margin-top: -32px; display: none; }
+.ralign label
+{
+	display: inline-block;
+	float: left;
+	width: 150px;
+}
+#addr-left { float: left; display: inline-block; vertical-align: middle; padding-top: 30px; }
+#addr-right { float: right; display: inline-block; vertical-align: middle; padding-top: 30px; }
+#addr-middle { display: inline-block; }
+.hide {
+	display: none;
+}
+.tooltip-wide { max-width: 500px;width: 500px;}
+.header-message{width:960px;margin:10px auto;text-align:center;}
+.header-message .mesgHighlight{color:#cc0000;font-weight:bold;}
+#masterPassLearnMore { font-family: arial;font-size: 8.5pt;font-weight: bold;text-decoration: none;color: #0044AA;text-align: right;}
+#masterPassLearnMore:hover { text-decoration: underline }
+#GooglePayButton { display: inline-block; vertical-align: top; padding: 15px 10px 13px 10px; }
+#AmazonPayButton { display: inline-block; vertical-align: top; padding: 15px 10px 13px 10px; }
+#guestVme { display: inline-block; vertical-align: top; padding: 13px 10px 11px 10px; }
+#guestMasterPass { display: inline-block; vertical-align: top; padding: 13px 10px 13px 10px; }

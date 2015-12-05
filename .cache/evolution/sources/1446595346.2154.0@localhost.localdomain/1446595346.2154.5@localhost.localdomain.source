@@ -1,0 +1,16 @@
+[Data Source]
+DisplayName=Contacts
+Enabled=true
+Parent=1446595346.2154.0@localhost.localdomain
+
+[Authentication]
+Host=www.google.com
+Method=OAuth2
+Port=0
+ProxyUid=system-proxy
+RememberPassword=true
+User=dougelk@gmail.com
+CredentialName=
+
+[Address Book]
+BackendName=google
